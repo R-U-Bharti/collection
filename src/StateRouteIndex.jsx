@@ -2,6 +2,7 @@ import { useContext, lazy } from "react"
 import { contextVar } from "./Context/contextVar"
 import ProjectBase from "./Pages/ProjectBase";
 import { decrypt } from "./Components/Common/PowerUpFunctions";
+const ExperimentalProject = lazy(() => import("./Pages/ExperimentalProject"));
 const Home = lazy(() => import("./Pages/Home"));
 
 const StateRouteIndex = () => {
@@ -9,6 +10,7 @@ const StateRouteIndex = () => {
 
     const routes = [
         { path: '/projectBase', element: <ProjectBase /> },
+        { path: '/experiment', element: <ExperimentalProject /> },
     ]
 
     const checkAuth = (element) => {

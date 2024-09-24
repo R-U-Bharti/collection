@@ -3,49 +3,38 @@ import { Prism } from 'react-syntax-highlighter';
 import { a11yDark as theme } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { BiSolidUpArrow } from 'react-icons/bi'
 
-import jsconfig from '../../jsconfig.json?raw'
-import viteConfig from '../../vite.config.js?raw'
-import css1 from '../index.css?raw'
-import ErrorBoundary from '@/Components/ErrorBoundary?raw';
-import SideBar from './Sidebar/Sidebar?raw';
-import RecursiveMenu from './Sidebar/RecursiveMenu?raw';
-import Table from './SimpleTable/Table?raw';
-import Pagination from './SimpleTable/Pagination?raw';
-import BackendTable from './BackendTable/BackendTable?raw';
-import TableBp from './BackendTable/TableBp?raw';
-import Pagination2 from './BackendTable/Pagination?raw';
-import Navbar from './Navbar?raw';
-import AxiosInterceptors from '@/Api/AxiosInterceptor?raw';
-import fetchInterceptor from '@/Api/fetchInterceptor?raw';
-import apiConstants from '@/Api/apiConstants?raw'
-import baseApi from '@/Api/baseApi?raw'
-import LoopForm from './LoopForm?raw';
-import PowerUpFunctions from '@/Components/Common/PowerUpFunctions?raw'
-import Stepper from '@/Components/Stepper?raw';
-import FormIndex from './FormIndex?raw';
-import main from '@/Translation/main?raw'
-import TranslationIndex from '@/Translation/TranslationIndex?raw'
-import TranslationProvider from '@/Translation/TranslationProvider?raw'
-import ChangeLanguageComponent from '@/Translation/ChangeLanguageComponent?raw';
-import Dialog from './Dialog?raw';
+import useWebWorker from './Experiments/WebWorker/useWebWorker?raw';
+import WebWorkerIndex from './Experiments/WebWorker/WebWorkerIndex?raw';
+import DataVirtualization from './Experiments/DataVirtualization?raw';
+import Virtualization from './Experiments/Virtualization?raw';
+import Curried from './Experiments/Curried?raw';
+import SmartCam from './Experiments/SmartCam?raw';
+import PerformanceAPI from './Experiments/PerformanceAPI?raw';
+import HumanVerification from './Experiments/HumanVerification?raw';
+import ChatBot from './Experiments/ChatBot/ChatBot?raw';
+import Parallax from './Experiments/Parallax?raw';
+import DivMagicCompiler from './Experiments/DivMagicCompiler?raw';
+import KanbanBoard from './Experiments/KanbanBoard/KanbanBoard?raw';
+import kanbanStyle from './Experiments/KanbanBoard/style.css?raw';
+import FileCompressor from './Experiments/FileCompressor?raw';
+import MouseMove from './Experiments/MouseMove?raw';
 
-const ProjectBase = () => {
+const ExperimentalProject = () => {
 
   let topics = [
-    { id: 1, topic: "Import components via '@' ", fname: "jsconfig.json, vite.config.js", file: [jsconfig, viteConfig] },
-    { id: 2, topic: "Base CSS ", fname: "App.css", file: [css1] },
-    { id: 3, topic: "Handling white screen error boundary", fname: "ErrorBoundary.jsx", file: [ErrorBoundary] },
-    { id: 4, topic: "Recursive Sidebar", fname: "SideBar.jsx, RecursiveMenu.jsx", file: [SideBar, RecursiveMenu] },
-    { id: 5, topic: "Navbar", fname: "Navbar.jsx", file: [Navbar] },
-    { id: 6, topic: "Basic Table", fname: "Table.jsx, Pagination.jsx", file: [Table, Pagination] },
-    { id: 7, topic: "Backend Dependent Table", fname: "BackendTable.jsx, TableBp.jsx, Pagination.jsx", file: [BackendTable, TableBp, Pagination2] },
-    { id: 8, topic: "Interceptors", fname: "AxiosInterceptor.jsx, fetchInterceptor.jsx", file: [AxiosInterceptors, fetchInterceptor] },
-    { id: 9, topic: "API Constants and Collection", fname: "apiConstant.js, baseApi.jsx", file: [apiConstants, baseApi] },
-    { id: 10, topic: "Loop Form", fname: "LoopForm.jsx", file: [LoopForm] },
-    { id: 11, topic: "Power Up Functions", fname: "PowerUpFunctions.jsx", file: [PowerUpFunctions] },
-    { id: 12, topic: "Stepper Form", fname: "Stepper.jsx, FormIndex.jsx", file: [Stepper, FormIndex] },
-    { id: 13, topic: "Translation", fname: "main.jsx, TranslationIndex.jsx, TranslationProvider.jsx, ChangeLanguageComponent.jsx", file: [main, TranslationIndex, TranslationProvider, ChangeLanguageComponent] },
-    { id: 14, topic: "Inbuilt Dialog", fname: "Dialog.jsx", file: [Dialog] },
+    { id: 1, topic: "Web Worker", fname: "useWebWorker.js, WebWorkerIndex.jsx", file: [useWebWorker, WebWorkerIndex] },
+    { id: 2, topic: "Data Virtualization with and without library", fname: "DataVirtualization.jsx, Virtualization.jsx", file: [DataVirtualization, Virtualization] },
+    { id: 3, topic: "Camera Feature", fname: "SmartCam.jsx", file: [SmartCam] },
+    { id: 4, topic: "Performance API", fname: "PerformanceAPI.jsx", file: [PerformanceAPI] },
+    { id: 5, topic: "Human Verification", fname: "HumanVerification.jsx", file: [HumanVerification] },
+    { id: 6, topic: "Chat Bot", fname: "ChatBot.jsx", file: [ChatBot] },
+    { id: 7, topic: "Parallax using 'Atropos'", fname: "Parallax.jsx", file: [Parallax] },
+    { id: 8, topic: "Compiler using div tag only", fname: "DivMagicCompiler.jsx", file: [DivMagicCompiler] },
+    { id: 9, topic: "Kanban Board with inbuild accodion", fname: "KanbanBoard.jsx, style.css", file: [KanbanBoard, kanbanStyle] },
+    { id: 10, topic: "File Compressor", fname: "FileCompressor.jsx", file: [FileCompressor] },
+    { id: 11, topic: "Mouse Movement", fname: "MouseMove.jsx", file: [MouseMove] },
+    
+    { id: 100, topic: "Curried Problems", fname: "Curried.js", file: [Curried] },
   ]
 
   const [copySuccess, setCopySuccess] = useState("");
@@ -102,7 +91,7 @@ const ProjectBase = () => {
         <div className="w-full px-2">
 
           <div className="w-full flex justify-center">
-            <h1 className='text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10'>Project Base Components</h1>
+            <h1 className='text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10'>Experimented Components</h1>
           </div>
 
           <div className="flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4">
@@ -143,4 +132,4 @@ const ProjectBase = () => {
   )
 }
 
-export default ProjectBase
+export default ExperimentalProject

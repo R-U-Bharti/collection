@@ -1,0 +1,26 @@
+/* Inbuilt accordion CSS */
+details>* {
+    user-select: none;
+    transition: all;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+
+summary::before,
+summary::after {
+    transition: all;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+
+/* summary::marker {
+    content: none;
+}
+
+summary::after {
+    content: "+";
+}
+
+[open]>summary::after {
+    content: "-";
+} */
