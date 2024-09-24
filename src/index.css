@@ -1,3 +1,161 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(28, 28, 28);
+    color: whitesmoke;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(146, 146, 146, 0.3);
+    border: 3px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+    height: 9px;
+}
+
+dialog:-internal-dialog-in-top-layer {
+    position: fixed;
+    inset-block-start: 0px;
+    inset-block-end: 0px;
+    max-width: 99.9%;
+    max-height: 99.8%;
+    user-select: text;
+    visibility: visible;
+    overflow: auto;
+}
+
+input[type='file']::file-selector-button {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    right: -4px;
+    top: 0;
+    height: 100%;
+    border: none;
+    padding: 5px 15px;
+    color: #292929cd;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: #dadadaf2;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: #a9a9a9f2;
+}
+
+/* React-Select Library CSS */
+.css-1u9des2-indicatorSeparator {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    width: 1px;
+    background-color: hsl(0, 0%, 80%);
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    box-sizing: border-box;
+}
+
+.css-13cymwt-control {
+    min-height: max-content !important;
+}
+
+.css-hlgwow {
+    padding: 0rem 0.5rem !important;
+}
+
+.css-1u9des2-indicatorSeparator {
+    visibility: hidden;
+}
+
+.css-16xfy0z-control,
+.css-t3ipsp-control {
+    min-height: 10px !important;
+}
+
+.css-1xc3v61-indicatorContainer,
+.css-15lsz6c-indicatorContainer,
+.css-1xc3v61-indicatorContainer {
+    padding: 0px 8px !important;
+}
+
+.css-13cymwt-control {
+    border: 1px solid #d4d4d8 !important;
+    outline: none !important;
+}
+
+/* Skeleton CSS */
+.animate {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, #fff 4%, #e2e2e2 25%, #fff 36%);
+    background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Range Slider CSS */
+input[type='range']::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #132438 var(--value), #e2e8f0 var(--value));
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type='range']::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #132438 var(--value), #e2e8f0 var(--value));
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    z-index: 999;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: url('./assets/slider.svg') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    background-position: center;
+
+    margin-top: -11px;
+}
+
+input[type='range']::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: url('./assets/slider.svg') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    background-position: center;
+
+    margin-top: -11px;
+}
