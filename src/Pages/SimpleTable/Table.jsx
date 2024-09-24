@@ -44,7 +44,7 @@ import { useTable, useSortBy, useGlobalFilter, usePagination } from 'react-table
 import { CSVLink } from "react-csv";
 import * as XLSX from 'xlsx'
 import { saveAs } from 'file-saver';
-import blank from '@/assets/blankTable.png'
+import blank from './blankTable.png'
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
 import { IoIosArrowDropdown } from 'react-icons/io';
 import { FaMagnifyingGlass } from 'react-icons/fa6';
