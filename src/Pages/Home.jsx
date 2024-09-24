@@ -63,8 +63,8 @@ const Home = () => {
         </div>
 
         {routes.map((card, index) => <>
-          <div onClick={() => routeFun(card)} className="w-full md:w-[24%] transition-all duration-200 cursor-pointer border-2 flex flex-col items-center justify-between gap-2 p-4 rounded-md hover:border-blue-700 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)] hover:bg-blue-800/10" key={index}>
-
+          <div onClick={() => routeFun(card)} className="relative w-full md:w-[24%] transition-all duration-200 cursor-pointer border-2 flex flex-col items-center justify-between gap-2 p-4 rounded-md hover:border-blue-700 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)] hover:bg-blue-800/10" key={index}>
+            {card.path && decrypt(localPwd) !== import.meta.env.VITE_PWD && <div className='absolute top-0 right-0 bg-red-600 border border-red-400 px-3 py-1 text-xs rounded-bl'>Auth Required</div>}
             {card.icon && <>
               <span className='text-[150px] w-max h-max'>{card?.icon}</span>
             </>}
