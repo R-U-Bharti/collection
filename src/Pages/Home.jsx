@@ -1,12 +1,16 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { contextVar } from '@/Context/contextVar'
 import { GrReactjs } from "react-icons/gr";
 import mapple from '@/assets/mapple.svg'
 import entertaining from '@/assets/entertaining.png'
+import { decrypt, encrypt } from '@/Components/Common/PowerUpFunctions';
+import toast from 'react-hot-toast';
 
 const Home = () => {
 
   const { route } = useContext(contextVar)
+  const [pwd, setPwd] = useState('')
+  let localPwd = sessionStorage.getItem('pwd') ?? ''
 
   const routes = [
     { path: '/projectBase', title: 'Project Base Components', icon: <GrReactjs color="#58c4dc" /> },
@@ -20,6 +24,33 @@ const Home = () => {
     }
     if (card.path) {
       route(card?.path ?? "/")
+    }
+  }
+
+  const handleAuth = () => {
+    if (pwd === import.meta.env.VITE_PWD) {
+      sessionStorage.setItem('pwd', encrypt(pwd))
+      toast.success('Authenticated',
+        {
+          icon: '👏',
+          style: {
+            borderRadius: '10px',
+            background: 'rgba(0,0,0,0.9)',
+            color: '#fff',
+          },
+        }
+      )
+      window.location.reload()
+    } else {
+      toast.error("Incorrect Password", {
+        icon: '❌',
+        style: {
+          borderRadius: '10px',
+          background: 'rgba(0,0,0,0.9)',
+          color: '#fff',
+        },
+      })
+      setPwd('')
     }
   }
 
@@ -46,6 +77,16 @@ const Home = () => {
 
           </div>
         </>)}
+      </div>
+
+      <div className="md:absolute top-4 right-4 flex items-center gap-2">
+        {decrypt(localPwd) === import.meta.env.VITE_PWD ?
+          <div onClick={() => sessionStorage.clear()} className='cursor-pointer text-xs text-green-400 border border-green-400 px-3 py-1 rounded hover:bg-green-600 hover:text-white'>Authenticated</div>
+          :
+          <>
+            <input type="password" onChange={e => setPwd(e.target.value)} value={pwd} name="" id="" className='border rounded px-3 text-sm py-1 bg-white/20 placeholder:text-white text-white focus:outline-none' placeholder='Enter password...' />
+            <button onClick={() => handleAuth()} className='text-xs text-red-400 border border-red-400 px-3 py-1 rounded hover:bg-red-600 hover:text-white'>Authenticate</button>
+          </>}
       </div>
     </>
   )

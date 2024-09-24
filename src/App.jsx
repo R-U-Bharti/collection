@@ -1,6 +1,7 @@
 import { lazy, useState } from 'react';
 import { Route, Routes } from "react-router-dom"
 import { contextVar } from './Context/contextVar';
+import { Toaster } from 'react-hot-toast';
 const StateRouteIndex = lazy(() => import('./StateRouteIndex'));
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
 
   return (
     <>
+    <Toaster />
       <contextVar.Provider value={contextData}>
         <Routes>
           <Route index element={<StateRouteIndex />} />
