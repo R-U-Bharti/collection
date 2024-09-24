@@ -2,7 +2,7 @@ import { useContext, useState } from 'react'
 import { contextVar } from '@/Context/contextVar'
 import { GrReactjs } from "react-icons/gr";
 import mapple from '@/assets/mapple.svg'
-import entertaining from '@/assets/entertaining.png'
+import entertaining from '@/assets/entertaining.jpg'
 import { decrypt, encrypt } from '@/Components/Common/PowerUpFunctions';
 import toast from 'react-hot-toast';
 
