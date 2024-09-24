@@ -33,6 +33,8 @@ const StateRouteIndex = () => {
                     </>
                 )
             }
+
+            <div className="h-[10vh]"></div>
         </>
     )
 }
