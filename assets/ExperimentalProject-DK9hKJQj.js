@@ -1,4 +1,4 @@
-import{r as l,j as r}from"./index-CPFMIRBX.js";import{h as u,t as x,B as g}from"./StateRouteIndex-_Z81qDZQ.js";const k=`// Background thread\r
+import{r as l,j as r}from"./index-pojx69v3.js";import{h as u,t as x,B as g}from"./StateRouteIndex-DvSNYwux.js";const k=`// Background thread\r
 \r
 import { useEffect, useState } from "react";\r
 \r
@@ -978,7 +978,7 @@ const HumanVerification = () => {\r
   // };\r
 \r
   // const verifyCaptcha = async (userResponse) => {\r
-  //   const secretKey = '6LdD9rknAAAAAAFfQgCrMP0cYKMkr7HpHRcZG0fk';\r
+  //   const secretKey = import.meta.env.VITE_VC_SITE_KEY;\r
   //   const url = \`https://www.google.com/recaptcha/api/siteverify\`;\r
 \r
   //   const response = await axios.post(url, null, {\r
@@ -1013,12 +1013,12 @@ const HumanVerification = () => {\r
     <div>\r
       {/* Other form fields */}\r
       {/* <ReCAPTCHA\r
-        sitekey='6Le2-icoAAAAAO6SWFL_y_BvwL2-Rafo3KGBmH6M'\r
+        sitekey={import.meta.env.VITE_RC_SITE_KEY}\r
         onChange={handleCaptchaVerification}\r
       /> */}\r
 \r
       <HCaptcha\r
-        sitekey="cbf8c168-af51-486a-ad4d-333c3947ab6b"\r
+        sitekey={import.meta.env.VITE_HC_SITE_KEY}\r
         onLoad={onLoad}\r
         onVerify={setToken}\r
         ref={captchaRef}\r
@@ -1208,7 +1208,7 @@ const DivMagicCompiler = () => {\r
     )\r
 }\r
 \r
-export default DivMagicCompiler`,F=`import React, { useState } from 'react'\r
+export default DivMagicCompiler`,j=`import React, { useState } from 'react'\r
 import './style.css'\r
 \r
 /*\r
@@ -1387,7 +1387,7 @@ const KanbanBoard = () => {\r
     )\r
 }\r
 \r
-export default KanbanBoard`,j=`/* Inbuilt accordion CSS */\r
+export default KanbanBoard`,F=`/* Inbuilt accordion CSS */\r
 details>* {\r
     user-select: none;\r
     transition: all;\r
@@ -1412,7 +1412,7 @@ summary::after {\r
 \r
 [open]>summary::after {\r
     content: "-";\r
-} */`,A=`const FileCompressor = () => {\r
+} */`,T=`const FileCompressor = () => {\r
     \r
     const handleFileChange = async (event) => {\r
         const file = event.target.files[0];\r
@@ -1490,7 +1490,7 @@ summary::after {\r
     );\r
 };\r
 \r
-export default FileCompressor;`,T=`import React, { useEffect, useState } from 'react'\r
+export default FileCompressor;`,E=`import React, { useEffect, useState } from 'react'\r
 \r
 const MouseMove = () => {\r
 \r
@@ -1509,4 +1509,4 @@ const MouseMove = () => {\r
     )\r
 }\r
 \r
-export default MouseMove`,H=()=>{let f=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[k,v]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[b,w]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[C]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[I]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[N]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[S]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[D]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[R]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[F,j]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[A]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[T]},{id:100,topic:"Curried Problems",fname:"Curried.js",file:[W]}];const[p,o]=l.useState(""),[t,n]=l.useState(""),[m,a]=l.useState(!1),s=()=>{window.scrollTo({top:0,behavior:"smooth"})},h=e=>{s(),t==e?n(""):n(e)},y=(e,c)=>{navigator.clipboard.writeText(e).then(()=>{o(c),setTimeout(()=>o(""),2e3)}).catch(i=>{console.error("Failed to copy: ",i)})},d=()=>{window.scrollY>152?a(!0):a(!1)};return l.useEffect(()=>(window.addEventListener("scroll",d),()=>{window.removeEventListener("scroll",d)}),[]),r.jsxs(r.Fragment,{children:[r.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:r.jsxs("div",{className:"w-full px-2",children:[r.jsx("div",{className:"w-full flex justify-center",children:r.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),r.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:f.map(e=>r.jsx(r.Fragment,{children:r.jsxs("div",{className:`w-full transition-all duration-200 ${t==e.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[r.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${t==e.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>h(e.id),children:[e.topic," - ",r.jsxs("span",{className:"font-semibold italic",children:["(",e.fname,")"]})]}),t==e.id&&e.file.map((c,i)=>r.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[r.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>y(c,String(c)),children:[p==String(c)?"Copied":"Copy"," Code"]}),r.jsx(u,{className:"text-xs",language:"javascript",style:x,children:c},i)]}))]},e.id)}))})]})}),m&&r.jsx("div",{onClick:s,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:r.jsx("a",{className:"transform text-white ",children:r.jsx(g,{})})})]})};export{H as default};
+export default MouseMove`,M=()=>{let f=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[k,v]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[b,w]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[C]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[I]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[N]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[S]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[D]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[R]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[j,F]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[T]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[E]},{id:100,topic:"Curried Problems",fname:"Curried.js",file:[W]}];const[p,o]=l.useState(""),[t,n]=l.useState(""),[m,a]=l.useState(!1),s=()=>{window.scrollTo({top:0,behavior:"smooth"})},h=e=>{s(),t==e?n(""):n(e)},y=(e,c)=>{navigator.clipboard.writeText(e).then(()=>{o(c),setTimeout(()=>o(""),2e3)}).catch(i=>{console.error("Failed to copy: ",i)})},d=()=>{window.scrollY>152?a(!0):a(!1)};return l.useEffect(()=>(window.addEventListener("scroll",d),()=>{window.removeEventListener("scroll",d)}),[]),r.jsxs(r.Fragment,{children:[r.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:r.jsxs("div",{className:"w-full px-2",children:[r.jsx("div",{className:"w-full flex justify-center",children:r.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),r.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:f.map(e=>r.jsx(r.Fragment,{children:r.jsxs("div",{className:`w-full transition-all duration-200 ${t==e.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[r.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${t==e.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>h(e.id),children:[e.topic," - ",r.jsxs("span",{className:"font-semibold italic",children:["(",e.fname,")"]})]}),t==e.id&&e.file.map((c,i)=>r.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[r.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>y(c,String(c)),children:[p==String(c)?"Copied":"Copy"," Code"]}),r.jsx(u,{className:"text-xs",language:"javascript",style:x,children:c},i)]}))]},e.id)}))})]})}),m&&r.jsx("div",{onClick:s,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:r.jsx("a",{className:"transform text-white ",children:r.jsx(g,{})})})]})};export{M as default};
