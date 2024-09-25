@@ -8,6 +8,7 @@ let column = [
         Header: "", // Header name
         accessor: "id", // key
         Cell: ({cell}) => (cell.row.original.id) // Your cell | you can also add button here by wraping in <></>
+        width: "%" // OPTIONAL, add width of cell
     },
 
     <!-- Accordion Column -->
@@ -16,6 +17,7 @@ let column = [
         accessor: "id", // optional when more is true
         Cell: ({cell}) => cell.row.original.id,
         more: true // pass it true, if you want this header as accordion row
+        width: "%" // OPTIONAL, add width of cell
     },
     {
         Header: "",
@@ -23,6 +25,7 @@ let column = [
         Cell: ({cell}) => <></>, // Create your screen here
         more: true // pass it true when you want this header as accordion row
         screen: true // pass it true when you want to create screen to accordion
+        width: "%" // OPTIONAL, add width of cell
     },
     .....
     .....
