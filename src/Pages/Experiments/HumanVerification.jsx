@@ -11,7 +11,7 @@ const HumanVerification = () => {
   // };
 
   // const verifyCaptcha = async (userResponse) => {
-  //   const secretKey = '6LdD9rknAAAAAAFfQgCrMP0cYKMkr7HpHRcZG0fk';
+  //   const secretKey = import.meta.env.VITE_VC_SITE_KEY;
   //   const url = `https://www.google.com/recaptcha/api/siteverify`;
 
   //   const response = await axios.post(url, null, {
@@ -46,12 +46,12 @@ const HumanVerification = () => {
     <div>
       {/* Other form fields */}
       {/* <ReCAPTCHA
-        sitekey='6Le2-icoAAAAAO6SWFL_y_BvwL2-Rafo3KGBmH6M'
+        sitekey={import.meta.env.VITE_RC_SITE_KEY}
         onChange={handleCaptchaVerification}
       /> */}
 
       <HCaptcha
-        sitekey="cbf8c168-af51-486a-ad4d-333c3947ab6b"
+        sitekey={import.meta.env.VITE_HC_SITE_KEY}
         onLoad={onLoad}
         onVerify={setToken}
         ref={captchaRef}
