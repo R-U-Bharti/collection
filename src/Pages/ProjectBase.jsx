@@ -28,6 +28,10 @@ import TranslationIndex from '@/Translation/TranslationIndex?raw'
 import TranslationProvider from '@/Translation/TranslationProvider?raw'
 import ChangeLanguageComponent from '@/Translation/ChangeLanguageComponent?raw';
 import Dialog from './Dialog?raw';
+import NormalSlider from '@/Components/NormalSlider?raw';
+import sliderCss from '@/Components/NormalSlider.css?raw'
+import sliderSvg from '@/Components/slider.svg?raw'
+import TwoThumbSlider from '@/Components/TwoThumbSlider?raw';
 
 const ProjectBase = () => {
 
@@ -46,6 +50,7 @@ const ProjectBase = () => {
     { id: 12, topic: "Stepper Form", fname: "Stepper.jsx, FormIndex.jsx", file: [Stepper, FormIndex] },
     { id: 13, topic: "Translation", fname: "main.jsx, TranslationIndex.jsx, TranslationProvider.jsx, ChangeLanguageComponent.jsx", file: [main, TranslationIndex, TranslationProvider, ChangeLanguageComponent] },
     { id: 14, topic: "Inbuilt Dialog", fname: "Dialog.jsx", file: [Dialog] },
+    { id: 15, topic: "Range or Slider", fname: "NormalSlider.jsx, NormalSlider.css, slider.svg, TwoThumbSlider.jsx", file: [NormalSlider, sliderCss, sliderSvg, TwoThumbSlider] },
   ]
 
   const [copySuccess, setCopySuccess] = useState("");
