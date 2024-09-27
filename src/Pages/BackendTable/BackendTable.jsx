@@ -43,6 +43,9 @@ const[refresh, setRefresh] = useState(0) // change this value to refresh the tab
     exportStatus={true} // OPTIONAL, pass it true, when you want export buttons
     more={true} // pass it true when you want accordion column
     getData={tableData => yourFunction(tableData)} // OPTIONAL, if you want table data
+    param={"len=3&page=4"} // to send param and for multiple by connecting '&' operator
+    method="post" // send method here, by default get is used
+    body = {} // send payload here
 />
 */
 
@@ -77,7 +80,15 @@ const BackendTable = (props) => {
             url = `${props?.api}?draw=1&page=${pageCount}&length=${perPageCount}`;
         }
 
-        AxiosInterceptors.get(url, ApiHeader())
+        async function axiosResponse(method = 'get', body = {}) {
+            if (method == 'post') {
+                return await AxiosInterceptors.post(url, body, ApiHeader())
+            } else {
+                return await AxiosInterceptors.get(url, ApiHeader())
+            }
+        }
+
+        axiosResponse(props?.method, props?.body)
             .then((res) => {
                 console.log(`Table Response for ${url}:`, res)
                 setdataList(res?.data?.data ?? [])

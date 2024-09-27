@@ -82,6 +82,7 @@ const ProjectBase = () => {
       });
   };
   const handleScroll = () => {
+    console.log('scroll details: ', window.innerHeight, window.scrollY)
     if (window.scrollY > 152) {
       setIsVisible(true)
     } else {
