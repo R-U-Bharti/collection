@@ -1,4 +1,4 @@
-import{r as l,j as r}from"./index-CYO-7Mr-.js";import{h as u,t as x,B as g}from"./StateRouteIndex-CBCeUrnK.js";const k=`// Background thread\r
+import{r as t,j as e}from"./index-CA1BDbaL.js";import{h as g,t as k,B as v}from"./StateRouteIndex-Bh7-_o_I.js";const b=`// Background thread\r
 \r
 import { useEffect, useState } from "react";\r
 \r
@@ -28,7 +28,7 @@ const useWebWorker = () => {\r
     return { calculate, result }\r
 }\r
 \r
-export default useWebWorker;`,v=`// JS is single-threaded programming language\r
+export default useWebWorker;`,w=`// JS is single-threaded programming language\r
 // Solution web worker\r
 \r
 // Main Thread\r
@@ -66,7 +66,7 @@ const WebWorkerIndex = () => {\r
   )\r
 }\r
 \r
-export default WebWorkerIndex`,b=`import { FixedSizeList } from 'react-window';\r
+export default WebWorkerIndex`,W=`import { FixedSizeList } from 'react-window';\r
 \r
 const DataVirtualization = () => {\r
 \r
@@ -94,7 +94,7 @@ const DataVirtualization = () => {\r
   )\r
 }\r
 \r
-export default DataVirtualization`,w=`import React, { useState, useRef, useEffect } from 'react';\r
+export default DataVirtualization`,C=`import React, { useState, useRef, useEffect } from 'react';\r
 \r
 const data = Array.from({ length: 1000000 }, (_, index) => new Object({ id: index, name: \`Item \${index}\` }));\r
 \r
@@ -167,7 +167,7 @@ const Virtualization = () => {\r
     );\r
 };\r
 \r
-export default Virtualization;`,W=`function Curried() {\r
+export default Virtualization;`,I=`function Curried() {\r
 \r
     // 1. Basic Currying Problem\r
     function curry(func) {\r
@@ -387,7 +387,7 @@ export default Virtualization;`,W=`function Curried() {\r
     return (<></>)\r
 }\r
 \r
-export default Curried;`,C=`import { useFormik } from 'formik'\r
+export default Curried;`,N=`import { useFormik } from 'formik'\r
 import React, { useState, useRef, useEffect } from "react";\r
 import EXIF from 'exif-js'\r
 import * as yup from 'yup'\r
@@ -926,7 +926,7 @@ const SmartCam = () => {\r
     )\r
 }\r
 \r
-export default SmartCam`,I=`const PerformanceAPI = () => {\r
+export default SmartCam`,S=`const PerformanceAPI = () => {\r
 \r
   const loadTime = window.performance.now() / 1000\r
 \r
@@ -965,7 +965,7 @@ export default SmartCam`,I=`const PerformanceAPI = () => {\r
   )\r
 }\r
 \r
-export default PerformanceAPI`,N=`import React, { useEffect, useRef, useState } from 'react';\r
+export default PerformanceAPI`,D=`import React, { useEffect, useRef, useState } from 'react';\r
 import ReCAPTCHA from 'react-google-recaptcha';\r
 import HCaptcha from '@hcaptcha/react-hcaptcha';\r
 import axios from 'axios'\r
@@ -1030,7 +1030,7 @@ const HumanVerification = () => {\r
 };\r
 \r
 export default HumanVerification;\r
-`,S=`// ==============================================\r
+`,R=`// ==============================================\r
 // || Author: R U Bharti\r
 // || Date: 21-08-2023\r
 // || Component: Chat Bot\r
@@ -1155,7 +1155,7 @@ const ChatBot = (props) => {\r
     )\r
 }\r
 \r
-export default ChatBot`,D=`import React from 'react'\r
+export default ChatBot`,j=`import React from 'react'\r
 import Atropos from 'atropos/react';\r
 import 'atropos/css'\r
 \r
@@ -1174,7 +1174,7 @@ const Parallax = () => {\r
     )\r
 }\r
 \r
-export default Parallax`,R=`import { useState } from 'react'\r
+export default Parallax`,F=`import { useState } from 'react'\r
 \r
 const DivMagicCompiler = () => {\r
 \r
@@ -1208,7 +1208,7 @@ const DivMagicCompiler = () => {\r
     )\r
 }\r
 \r
-export default DivMagicCompiler`,j=`import React, { useState } from 'react'\r
+export default DivMagicCompiler`,T=`import React, { useState } from 'react'\r
 import './style.css'\r
 \r
 /*\r
@@ -1387,7 +1387,7 @@ const KanbanBoard = () => {\r
     )\r
 }\r
 \r
-export default KanbanBoard`,F=`/* Inbuilt accordion CSS */\r
+export default KanbanBoard`,E=`/* Inbuilt accordion CSS */\r
 details>* {\r
     user-select: none;\r
     transition: all;\r
@@ -1412,7 +1412,7 @@ summary::after {\r
 \r
 [open]>summary::after {\r
     content: "-";\r
-} */`,T=`const FileCompressor = () => {\r
+} */`,A=`const FileCompressor = () => {\r
     \r
     const handleFileChange = async (event) => {\r
         const file = event.target.files[0];\r
@@ -1490,7 +1490,7 @@ summary::after {\r
     );\r
 };\r
 \r
-export default FileCompressor;`,E=`import React, { useEffect, useState } from 'react'\r
+export default FileCompressor;`,H=`import React, { useEffect, useState } from 'react'\r
 \r
 const MouseMove = () => {\r
 \r
@@ -1509,4 +1509,4 @@ const MouseMove = () => {\r
     )\r
 }\r
 \r
-export default MouseMove`,M=()=>{let f=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[k,v]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[b,w]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[C]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[I]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[N]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[S]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[D]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[R]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[j,F]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[T]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[E]},{id:100,topic:"Curried Problems",fname:"Curried.js",file:[W]}];const[p,o]=l.useState(""),[t,n]=l.useState(""),[m,a]=l.useState(!1),s=()=>{window.scrollTo({top:0,behavior:"smooth"})},h=e=>{s(),t==e?n(""):n(e)},y=(e,c)=>{navigator.clipboard.writeText(e).then(()=>{o(c),setTimeout(()=>o(""),2e3)}).catch(i=>{console.error("Failed to copy: ",i)})},d=()=>{window.scrollY>152?a(!0):a(!1)};return l.useEffect(()=>(window.addEventListener("scroll",d),()=>{window.removeEventListener("scroll",d)}),[]),r.jsxs(r.Fragment,{children:[r.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:r.jsxs("div",{className:"w-full px-2",children:[r.jsx("div",{className:"w-full flex justify-center",children:r.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),r.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:f.map(e=>r.jsx(r.Fragment,{children:r.jsxs("div",{className:`w-full transition-all duration-200 ${t==e.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[r.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${t==e.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>h(e.id),children:[e.topic," - ",r.jsxs("span",{className:"font-semibold italic",children:["(",e.fname,")"]})]}),t==e.id&&e.file.map((c,i)=>r.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[r.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>y(c,String(c)),children:[p==String(c)?"Copied":"Copy"," Code"]}),r.jsx(u,{className:"text-xs",language:"javascript",style:x,children:c},i)]}))]},e.id)}))})]})}),m&&r.jsx("div",{onClick:s,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:r.jsx("a",{className:"transform text-white ",children:r.jsx(g,{})})})]})};export{M as default};
+export default MouseMove`,L=()=>{let f=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[b,w]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[W,C]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[N]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[S]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[D]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[R]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[j]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[F]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[T,E]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[A]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[H]},{id:100,topic:"Curried Problems",fname:"Curried.js",file:[I]}];const[p,n]=t.useState(""),[l,a]=t.useState(""),[m,s]=t.useState(!1),i=t.useRef([]),h=()=>{window.scrollTo({top:0,behavior:"smooth"})},y=r=>{i.current[r]&&i.current[r].scrollIntoView({behavior:"smooth",block:"start"})},u=r=>{y(r),l==r?a(""):a(r)},x=(r,c)=>{navigator.clipboard.writeText(r).then(()=>{n(c),setTimeout(()=>n(""),2e3)}).catch(o=>{console.error("Failed to copy: ",o)})},d=()=>{window.scrollY>152?s(!0):s(!1)};return t.useEffect(()=>(window.addEventListener("scroll",d),()=>{window.removeEventListener("scroll",d)}),[]),e.jsxs(e.Fragment,{children:[e.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:e.jsxs("div",{className:"w-full px-2",children:[e.jsx("div",{className:"w-full flex justify-center",children:e.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),e.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:f.map(r=>e.jsx(e.Fragment,{children:e.jsxs("div",{ref:c=>i.current[r==null?void 0:r.id]=c,className:`w-full transition-all duration-200 ${l==r.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[e.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${l==r.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>u(r.id),children:[r.topic," - ",e.jsxs("span",{className:"font-semibold italic",children:["(",r.fname,")"]})]}),l==r.id&&r.file.map((c,o)=>e.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[e.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>x(c,String(c)),children:[p==String(c)?"Copied":"Copy"," Code"]}),e.jsx(g,{className:"text-xs",language:"javascript",style:k,children:c},o)]}))]},r.id)}))})]})}),m&&e.jsx("div",{onClick:h,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:e.jsx("a",{className:"transform text-white ",children:e.jsx(v,{})})})]})};export{L as default};
