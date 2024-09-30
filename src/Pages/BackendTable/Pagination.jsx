@@ -48,7 +48,7 @@ const Pagination = ({ totalPages, prev, next, jump, page }) => {
     },[page])
 
     return (
-        <div className="flex md:justify-center space-x-2 overflow-auto w-full">
+        <div className="flex md:justify-center space-x-2 overflow-auto w-full md:w-auto">
             <button
                 onClick={goToPreviousPage}
                 className={`flex items-center gap-2 text-white pr-3 pl-2 py-1.5 border rounded-full text-sm ${currentPage === 1 ? 'cursor-not-allowed bg-zinc-300' : ' bg-[#132438] text-white'}`}
