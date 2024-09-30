@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Prism } from 'react-syntax-highlighter';
 import { a11yDark as theme } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { BiSolidUpArrow } from 'react-icons/bi'
@@ -33,13 +33,15 @@ const ExperimentalProject = () => {
     { id: 9, topic: "Kanban Board with inbuild accodion", fname: "KanbanBoard.jsx, style.css", file: [KanbanBoard, kanbanStyle] },
     { id: 10, topic: "File Compressor", fname: "FileCompressor.jsx", file: [FileCompressor] },
     { id: 11, topic: "Mouse Movement", fname: "MouseMove.jsx", file: [MouseMove] },
-    
+
     { id: 100, topic: "Curried Problems", fname: "Curried.js", file: [Curried] },
   ]
 
   const [copySuccess, setCopySuccess] = useState("");
   const [toggle, setToggle] = useState('')
   const [isVisible, setIsVisible] = useState(false)
+
+  const topicRef = useRef([])
 
   const scrollTop = () => {
     window.scrollTo({
@@ -48,9 +50,18 @@ const ExperimentalProject = () => {
     })
   }
 
+  const scrollToTopic = (id) => {
+    if (topicRef.current[id]) {
+      topicRef.current[id].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   const toggleFun = (id) => {
 
-    scrollTop()
+    scrollToTopic(id)
 
     if (toggle == id) {
       setToggle('')
@@ -98,7 +109,7 @@ const ExperimentalProject = () => {
             {
               topics.map((item) =>
                 <>
-                  <div className={`w-full transition-all duration-200 ${toggle == item.id ? "md:w-full" : "md:w-[49%]"}`} key={item.id} resizable={true}>
+                  <div ref={(el) => (topicRef.current[item?.id] = el)} className={`w-full transition-all duration-200 ${toggle == item.id ? "md:w-full" : "md:w-[49%]"}`} key={item.id} resizable={true}>
 
                     <h2 className={`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${toggle == item.id ? 'border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]' : 'border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]'}`} onClick={() => toggleFun(item.id)} >
                       {item.topic} - <span className='font-semibold italic'>({item.fname})</span>
