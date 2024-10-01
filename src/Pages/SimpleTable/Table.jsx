@@ -324,7 +324,7 @@ const Table = (props) => {
                                         return (
                                             <div key={index} className="border-2 rounded-xl p-3 shadow-[0px_0px_10px_rgba(0,0,0,0.1)] bg-white flex flex-col gap-2 text-sm">
                                                 {props?.columns?.map((column, index) => <div key={index} className="flex gap-2">
-                                                    <span className="font-semibold">{column?.Header}: </span>
+                                                    {!column?.screen && <span className="font-semibold">{column?.Header}: </span>}
                                                     <div className="font-normal">
                                                         {row?.cells[index].render('Cell')}
                                                     </div>

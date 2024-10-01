@@ -325,7 +325,7 @@ const TableBp = (props) => {
                                         return (
                                             <div key={index} className="border-2 rounded-xl p-3 shadow-[0px_0px_10px_rgba(0,0,0,0.1)] bg-white flex flex-col gap-2 text-sm">
                                                 {props?.columns?.map((column, index) => <div key={index} className="flex gap-2">
-                                                    <span className="font-semibold">{column?.Header}: </span>
+                                                    {!column?.screen && <span className="font-semibold">{column?.Header}: </span>}
                                                     <div className="font-normal">
                                                         {row?.cells[index].render('Cell')}
                                                     </div>
@@ -357,7 +357,7 @@ const TableBp = (props) => {
                     <>
                         <div className='px-4 pt-5 pb-3 w-full flex md:flex-row flex-col md:items-center flex-wrap gap-y-2 justify-between'>
                             <div className='text-sm text-zinc-500'>
-                            Showing {((parseInt(props?.currentPage) - 1) * parseInt(pageSize)) + 1} to {(parseInt(props?.currentPage) * parseInt(pageSize)) > props.totalCount ? props.totalCount : (parseInt(props?.currentPage) * parseInt(pageSize))} of {props?.totalCount ?? 0} records
+                                Showing {((parseInt(props?.currentPage) - 1) * parseInt(pageSize)) + 1} to {(parseInt(props?.currentPage) * parseInt(pageSize)) > props.totalCount ? props.totalCount : (parseInt(props?.currentPage) * parseInt(pageSize))} of {props?.totalCount ?? 0} records
                             </div>
 
                             <Pagination
