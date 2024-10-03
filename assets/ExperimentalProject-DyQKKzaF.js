@@ -1,4 +1,4 @@
-import{r as t,j as e}from"./index-CkEUYfxl.js";import{h as g,t as k,B as v}from"./StateRouteIndex-DWEGU-wa.js";const b=`// Background thread\r
+import{r as t,j as e}from"./index-B_KON1Eb.js";import{h as g,t as k,B as v}from"./StateRouteIndex-CCj7Y-Kv.js";const b=`// Background thread\r
 \r
 import { useEffect, useState } from "react";\r
 \r
@@ -167,227 +167,7 @@ const Virtualization = () => {\r
     );\r
 };\r
 \r
-export default Virtualization;`,I=`function Curried() {\r
-\r
-    // 1. Basic Currying Problem\r
-    function curry(func) {\r
-        return function curried(...args) {\r
-            if (args.length >= func.length) {\r
-                return func(...args)\r
-            } else {\r
-                return function (...moreArgs) {\r
-                    return curried(...args.concat(moreArgs))\r
-                }\r
-            }\r
-        }\r
-    }\r
-\r
-    function multiply(a, b, c) {\r
-        return a * b * c;\r
-    }\r
-\r
-    const curriedMultiply = curry(multiply);\r
-\r
-    // Direct Solution\r
-    // function curriedMultiply(a){\r
-    //     return function(b){\r
-    //         return function(c){\r
-    //             return a * b * c;\r
-    //         }\r
-    //     }\r
-    // }\r
-\r
-    console.log(curriedMultiply(2)(3)(4)); // 24\r
-    console.log(curriedMultiply(2, 3, 4)); // 24\r
-\r
-    // 2. Currying a Function with Multiple Parameters\r
-    function curry(func) {\r
-        return function curried(...args) {\r
-            if (args.length >= func.length) {\r
-                return func(...args);\r
-            } else {\r
-                return function (...moreArgs) {\r
-                    return curried(...args.concat(moreArgs))\r
-                }\r
-            }\r
-        }\r
-    }\r
-\r
-    function sumFun(a, b, c, d) {\r
-        return a + b + c + d;\r
-    }\r
-\r
-    const curriedSum = curry(sumFun)\r
-\r
-    console.log(curriedSum(1)(2)(3)(4)); // 10\r
-    console.log(curriedSum(1, 2)(3, 4)); // 10\r
-\r
-    // 3. Infinite Currying\r
-\r
-    // Direct Solution\r
-    // function sum(a){\r
-    //     return function(b){\r
-    //         if(!b){\r
-    //             return a;\r
-    //         } else {\r
-    //             return sum(a+b)\r
-    //         }\r
-    //     }\r
-    // }\r
-\r
-    function infiniteCurry(func) {\r
-        const next = (...args) => {\r
-            return (...moreArgs) => {\r
-                if (moreArgs.length == 0) {\r
-                    return func(...args)\r
-                }\r
-                return next(...args, ...moreArgs)\r
-            }\r
-        }\r
-        return next();\r
-    }\r
-\r
-    const sum = infiniteCurry((...nums) => nums.reduce((acc, num) => acc + num, 0));\r
-\r
-    console.log(sum(1)(2)(3)(4)()); // 10\r
-    console.log(sum(5)(10)(15)(20)()); // 50\r
-\r
-    // 4. Curried Function with Partial Application\r
-    function partial(func, ...fixedArgs) {\r
-        return function (...remainingArgs) {\r
-            return func(...fixedArgs, ...remainingArgs); // Combine fixed and remaining args\r
-        };\r
-    }\r
-\r
-    // Example: Partial multiplication function\r
-    function multiply(a, b, c) {\r
-        return a * b * c;\r
-    }\r
-\r
-    const partialMultiply = partial(multiply, 2);\r
-    console.log(partialMultiply(3, 4)); // 24\r
-\r
-    //   5. Currying with Multiple Functions\r
-    // Direct Solution\r
-    // function compose(func1, func2){\r
-    //     return function curried(...moreArgs){\r
-    //         return (func1(func2(...moreArgs)))\r
-    //         }\r
-    //     }\r
-\r
-    function compose(...func) {\r
-        return function (value) {\r
-            return func.reduceRight((acc, fun) => fun(acc), value)\r
-        }\r
-    }\r
-\r
-    // Example: Compose multiple functions\r
-    function add2(x) {\r
-        return x + 2;\r
-    }\r
-\r
-    function multiplyBy3(x) {\r
-        return x * 3;\r
-    }\r
-\r
-    const composedFunction = compose(add2, multiplyBy3);\r
-\r
-    console.log(composedFunction(5));// (5 * 3) + 2 = 17\r
-\r
-    // 6. Currying with Fixed Number of Arguments\r
-    function curryN(func, n) {\r
-        return function curried(...args) {\r
-            if (args.length >= n) {\r
-                return func(...args)\r
-            } else {\r
-                return (...moreArgs) => curried(...args, ...moreArgs)\r
-            }\r
-        }\r
-    }\r
-\r
-    function add(a, b, c) {\r
-        return a + b + c;\r
-    }\r
-\r
-    const curriedAdd = curryN(add, 3);\r
-\r
-    console.log(curriedAdd(1)(2)(3)); // 6\r
-    console.log(curriedAdd(1, 2)(3)); // 6\r
-\r
-    // 7. Currying a Function with Spread Arguments\r
-    function curryWithSpread(func) {\r
-        const next = (...args) => {\r
-            return (...moreArgs) => {\r
-                if (moreArgs.length == 0) {\r
-                    return func(...args)\r
-                }\r
-                return next(...args.concat(moreArgs))\r
-            }\r
-        }\r
-        return next()\r
-    }\r
-\r
-    const curriedSum2 = curryWithSpread((...nums) => nums.reduce((acc, num) => acc + num, 0));\r
-\r
-    console.log(curriedSum2(1, 2)(3)(4)()); // 10\r
-    console.log(curriedSum2(5)(10, 15)()); // 30\r
-\r
-    // 8. Curried Function with Optional Arguments\r
-    function curryOptional(func) {\r
-        return function curried(...args) {\r
-            return function (...moreArgs) {\r
-                const allArgs = args.concat(moreArgs);\r
-\r
-                if (moreArgs.length === 0) {\r
-                    return func(...allArgs);\r
-                }\r
-\r
-                return curried(...allArgs);\r
-\r
-            };\r
-        };\r
-    }\r
-\r
-    function sum(a = 0, b = 0, c = 0) {\r
-        return a + b + c;\r
-    }\r
-\r
-    const curriedSum3 = curryOptional(sum);\r
-\r
-    console.log(curriedSum3(1)(2, 3)); // 6\r
-    console.log(curriedSum3(1)(2)()); // 3 (since c defaults to 0)\r
-\r
-    //   9. Currying with Context (this)\r
-    function curryWithContext(func) {\r
-        return function curried(...args) {\r
-            return (...moreArgs) => {\r
-                return func.apply(this, [...args, ...moreArgs])\r
-            }\r
-        }\r
-    }\r
-\r
-    // Example: Method that uses 'this'\r
-    const obj = {\r
-        name: 'Alice',\r
-        greet(greeting, punctuation) {\r
-            return \`\${greeting}, \${this.name}\${punctuation}\`;\r
-        }\r
-    };\r
-\r
-    // Currying the 'greet' function\r
-    const curriedGreet = curryWithContext(obj.greet);\r
-\r
-    // Binding 'this' to 'obj' to preserve the context\r
-    const boundGreet = curriedGreet.bind(obj);\r
-\r
-    // Now we can call the curried version\r
-    console.log(boundGreet('Hello')('!')); // Output: "Hello, Alice!"\r
-    console.log(boundGreet('Hi')('!!!'));  // Output: "Hi, Alice!!!"\r
-\r
-    return (<></>)\r
-}\r
-\r
-export default Curried;`,N=`import { useFormik } from 'formik'\r
+export default Virtualization;`,I=`import { useFormik } from 'formik'\r
 import React, { useState, useRef, useEffect } from "react";\r
 import EXIF from 'exif-js'\r
 import * as yup from 'yup'\r
@@ -926,7 +706,7 @@ const SmartCam = () => {\r
     )\r
 }\r
 \r
-export default SmartCam`,S=`const PerformanceAPI = () => {\r
+export default SmartCam`,N=`const PerformanceAPI = () => {\r
 \r
   const loadTime = window.performance.now() / 1000\r
 \r
@@ -965,7 +745,7 @@ export default SmartCam`,S=`const PerformanceAPI = () => {\r
   )\r
 }\r
 \r
-export default PerformanceAPI`,D=`import React, { useEffect, useRef, useState } from 'react';\r
+export default PerformanceAPI`,S=`import React, { useEffect, useRef, useState } from 'react';\r
 import ReCAPTCHA from 'react-google-recaptcha';\r
 import HCaptcha from '@hcaptcha/react-hcaptcha';\r
 import axios from 'axios'\r
@@ -1030,7 +810,7 @@ const HumanVerification = () => {\r
 };\r
 \r
 export default HumanVerification;\r
-`,R=`// ==============================================\r
+`,D=`// ==============================================\r
 // || Author: R U Bharti\r
 // || Date: 21-08-2023\r
 // || Component: Chat Bot\r
@@ -1155,7 +935,7 @@ const ChatBot = (props) => {\r
     )\r
 }\r
 \r
-export default ChatBot`,j=`import React from 'react'\r
+export default ChatBot`,R=`import React from 'react'\r
 import Atropos from 'atropos/react';\r
 import 'atropos/css'\r
 \r
@@ -1174,7 +954,7 @@ const Parallax = () => {\r
     )\r
 }\r
 \r
-export default Parallax`,F=`import { useState } from 'react'\r
+export default Parallax`,j=`import { useState } from 'react'\r
 \r
 const DivMagicCompiler = () => {\r
 \r
@@ -1387,7 +1167,7 @@ const KanbanBoard = () => {\r
     )\r
 }\r
 \r
-export default KanbanBoard`,E=`/* Inbuilt accordion CSS */\r
+export default KanbanBoard`,F=`/* Inbuilt accordion CSS */\r
 details>* {\r
     user-select: none;\r
     transition: all;\r
@@ -1412,7 +1192,7 @@ summary::after {\r
 \r
 [open]>summary::after {\r
     content: "-";\r
-} */`,A=`const FileCompressor = () => {\r
+} */`,E=`const FileCompressor = () => {\r
     \r
     const handleFileChange = async (event) => {\r
         const file = event.target.files[0];\r
@@ -1509,4 +1289,4 @@ const MouseMove = () => {\r
     )\r
 }\r
 \r
-export default MouseMove`,L=()=>{let f=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[b,w]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[W,C]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[N]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[S]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[D]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[R]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[j]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[F]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[T,E]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[A]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[H]},{id:100,topic:"Curried Problems",fname:"Curried.js",file:[I]}];const[p,n]=t.useState(""),[l,a]=t.useState(""),[m,s]=t.useState(!1),i=t.useRef([]),h=()=>{window.scrollTo({top:0,behavior:"smooth"})},y=r=>{i.current[r]&&i.current[r].scrollIntoView({behavior:"smooth",block:"start"})},u=r=>{y(r),l==r?a(""):a(r)},x=(r,c)=>{navigator.clipboard.writeText(r).then(()=>{n(c),setTimeout(()=>n(""),2e3)}).catch(o=>{console.error("Failed to copy: ",o)})},d=()=>{window.scrollY>152?s(!0):s(!1)};return t.useEffect(()=>(window.addEventListener("scroll",d),()=>{window.removeEventListener("scroll",d)}),[]),e.jsxs(e.Fragment,{children:[e.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:e.jsxs("div",{className:"w-full px-2",children:[e.jsx("div",{className:"w-full flex justify-center",children:e.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),e.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:f.map(r=>e.jsx(e.Fragment,{children:e.jsxs("div",{ref:c=>i.current[r==null?void 0:r.id]=c,className:`w-full transition-all duration-200 ${l==r.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[e.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${l==r.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>u(r.id),children:[r.topic," - ",e.jsxs("span",{className:"font-semibold italic",children:["(",r.fname,")"]})]}),l==r.id&&r.file.map((c,o)=>e.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[e.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>x(c,String(c)),children:[p==String(c)?"Copied":"Copy"," Code"]}),e.jsx(g,{className:"text-xs",language:"javascript",style:k,children:c},o)]}))]},r.id)}))})]})}),m&&e.jsx("div",{onClick:h,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:e.jsx("a",{className:"transform text-white ",children:e.jsx(v,{})})})]})};export{L as default};
+export default MouseMove`,L=()=>{let p=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[b,w]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[W,C]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[I]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[N]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[S]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[D]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[R]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[j]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[T,F]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[E]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[H]}];const[f,o]=t.useState(""),[l,a]=t.useState(""),[h,s]=t.useState(!1),i=t.useRef([]),m=()=>{window.scrollTo({top:0,behavior:"smooth"})},y=r=>{i.current[r]&&i.current[r].scrollIntoView({behavior:"smooth",block:"start"})},x=r=>{y(r),l==r?a(""):a(r)},u=(r,c)=>{navigator.clipboard.writeText(r).then(()=>{o(c),setTimeout(()=>o(""),2e3)}).catch(d=>{})},n=()=>{window.scrollY>152?s(!0):s(!1)};return t.useEffect(()=>(window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}),[]),e.jsxs(e.Fragment,{children:[e.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:e.jsxs("div",{className:"w-full px-2",children:[e.jsx("div",{className:"w-full flex justify-center",children:e.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),e.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:p.map(r=>e.jsx(e.Fragment,{children:e.jsxs("div",{ref:c=>i.current[r==null?void 0:r.id]=c,className:`w-full transition-all duration-200 ${l==r.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[e.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${l==r.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>x(r.id),children:[r.topic," - ",e.jsxs("span",{className:"font-semibold italic",children:["(",r.fname,")"]})]}),l==r.id&&r.file.map((c,d)=>e.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[e.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>u(c,String(c)),children:[f==String(c)?"Copied":"Copy"," Code"]}),e.jsx(g,{className:"text-xs",language:"javascript",style:k,children:c},d)]}))]},r.id)}))})]})}),h&&e.jsx("div",{onClick:m,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:e.jsx("a",{className:"transform text-white ",children:e.jsx(v,{})})})]})};export{L as default};
