@@ -32,6 +32,9 @@ import NormalSlider from '@/Components/NormalSlider?raw';
 import sliderCss from '@/Components/NormalSlider.css?raw'
 import sliderSvg from '@/Components/slider.svg?raw'
 import TwoThumbSlider from '@/Components/TwoThumbSlider?raw';
+import contextVar from '@/Context/contextVar?raw';
+import store from '@/store/index?raw'
+import constantSlice from '@/store/slices/constantSlice?raw'
 
 const ProjectBase = () => {
 
@@ -51,6 +54,8 @@ const ProjectBase = () => {
     { id: 13, topic: "Translation", fname: "main.jsx, TranslationIndex.jsx, TranslationProvider.jsx, ChangeLanguageComponent.jsx", file: [main, TranslationIndex, TranslationProvider, ChangeLanguageComponent] },
     { id: 14, topic: "Inbuilt Dialog", fname: "Dialog.jsx", file: [Dialog] },
     { id: 15, topic: "Range or Slider", fname: "NormalSlider.jsx, NormalSlider.css, slider.svg, TwoThumbSlider.jsx", file: [NormalSlider, sliderCss, sliderSvg, TwoThumbSlider] },
+    { id: 16, topic: "useContext", fname: "contextVar.jsx", file: [contextVar] },
+    { id: 17, topic: "Redux Toolkit (@reduxjs/toolkit)", fname: "index.js, constantSlice.js", file: [store, constantSlice] },
   ]
 
   const [copySuccess, setCopySuccess] = useState("");
