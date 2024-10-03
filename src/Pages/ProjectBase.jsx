@@ -51,11 +51,11 @@ const ProjectBase = () => {
     { id: 10, topic: "Loop Form", fname: "LoopForm.jsx", file: [LoopForm] },
     { id: 11, topic: "Power Up Functions", fname: "PowerUpFunctions.jsx", file: [PowerUpFunctions] },
     { id: 12, topic: "Stepper Form", fname: "Stepper.jsx, FormIndex.jsx", file: [Stepper, FormIndex] },
-    { id: 13, topic: "Translation", fname: "main.jsx, TranslationIndex.jsx, TranslationProvider.jsx, ChangeLanguageComponent.jsx", file: [main, TranslationIndex, TranslationProvider, ChangeLanguageComponent] },
     { id: 14, topic: "Inbuilt Dialog", fname: "Dialog.jsx", file: [Dialog] },
     { id: 15, topic: "Range or Slider", fname: "NormalSlider.jsx, NormalSlider.css, slider.svg, TwoThumbSlider.jsx", file: [NormalSlider, sliderCss, sliderSvg, TwoThumbSlider] },
     { id: 16, topic: "useContext", fname: "contextVar.jsx", file: [contextVar] },
     { id: 17, topic: "Redux Toolkit (@reduxjs/toolkit)", fname: "index.js, constantSlice.js", file: [store, constantSlice] },
+    { id: 13, topic: "Translation", fname: "main.jsx, TranslationIndex.jsx, TranslationProvider.jsx, ChangeLanguageComponent.jsx", file: [main, TranslationIndex, TranslationProvider, ChangeLanguageComponent] },
   ]
 
   const [copySuccess, setCopySuccess] = useState("");

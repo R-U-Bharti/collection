@@ -1,6 +1,6 @@
 function Curried() {
 
-    // 1. Basic Currying Problem
+    // 🤔❓ 1. Basic Currying Problem
     function curry(func) {
         return function curried(...args) {
             if (args.length >= func.length) {
@@ -31,7 +31,7 @@ function Curried() {
     console.log(curriedMultiply(2)(3)(4)); // 24
     console.log(curriedMultiply(2, 3, 4)); // 24
 
-    // 2. Currying a Function with Multiple Parameters
+    // 🤔❓ 2. Currying a Function with Multiple Parameters
     function curry(func) {
         return function curried(...args) {
             if (args.length >= func.length) {
@@ -53,7 +53,7 @@ function Curried() {
     console.log(curriedSum(1)(2)(3)(4)); // 10
     console.log(curriedSum(1, 2)(3, 4)); // 10
 
-    // 3. Infinite Currying
+    // 🤔❓ 3. Infinite Currying
 
     // Direct Solution
     // function sum(a){
@@ -83,7 +83,7 @@ function Curried() {
     console.log(sum(1)(2)(3)(4)()); // 10
     console.log(sum(5)(10)(15)(20)()); // 50
 
-    // 4. Curried Function with Partial Application
+    // 🤔❓ 4. Curried Function with Partial Application
     function partial(func, ...fixedArgs) {
         return function (...remainingArgs) {
             return func(...fixedArgs, ...remainingArgs); // Combine fixed and remaining args
@@ -98,7 +98,7 @@ function Curried() {
     const partialMultiply = partial(multiply, 2);
     console.log(partialMultiply(3, 4)); // 24
 
-    //   5. Currying with Multiple Functions
+    //   🤔❓ 5. Currying with Multiple Functions
     // Direct Solution
     // function compose(func1, func2){
     //     return function curried(...moreArgs){
@@ -125,7 +125,7 @@ function Curried() {
 
     console.log(composedFunction(5));// (5 * 3) + 2 = 17
 
-    // 6. Currying with Fixed Number of Arguments
+    // 🤔❓ 6. Currying with Fixed Number of Arguments
     function curryN(func, n) {
         return function curried(...args) {
             if (args.length >= n) {
@@ -145,7 +145,7 @@ function Curried() {
     console.log(curriedAdd(1)(2)(3)); // 6
     console.log(curriedAdd(1, 2)(3)); // 6
 
-    // 7. Currying a Function with Spread Arguments
+    // 🤔❓ 7. Currying a Function with Spread Arguments
     function curryWithSpread(func) {
         const next = (...args) => {
             return (...moreArgs) => {
@@ -163,7 +163,7 @@ function Curried() {
     console.log(curriedSum2(1, 2)(3)(4)()); // 10
     console.log(curriedSum2(5)(10, 15)()); // 30
 
-    // 8. Curried Function with Optional Arguments
+    // 🤔❓ 8. Curried Function with Optional Arguments
     function curryOptional(func) {
         return function curried(...args) {
             return function (...moreArgs) {
@@ -188,7 +188,7 @@ function Curried() {
     console.log(curriedSum3(1)(2, 3)); // 6
     console.log(curriedSum3(1)(2)()); // 3 (since c defaults to 0)
 
-    //   9. Currying with Context (this)
+    //   🤔❓ 9. Currying with Context (this)
     function curryWithContext(func) {
         return function curried(...args) {
             return (...moreArgs) => {
@@ -215,7 +215,6 @@ function Curried() {
     console.log(boundGreet('Hello')('!')); // Output: "Hello, Alice!"
     console.log(boundGreet('Hi')('!!!'));  // Output: "Hi, Alice!!!"
 
-    return (<></>)
 }
 
 export default Curried;

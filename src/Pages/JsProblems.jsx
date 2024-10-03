@@ -3,35 +3,12 @@ import { Prism } from 'react-syntax-highlighter';
 import { a11yDark as theme } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { BiSolidUpArrow } from 'react-icons/bi'
 
-import useWebWorker from './Experiments/WebWorker/useWebWorker?raw';
-import WebWorkerIndex from './Experiments/WebWorker/WebWorkerIndex?raw';
-import DataVirtualization from './Experiments/DataVirtualization?raw';
-import Virtualization from './Experiments/Virtualization?raw';
-import SmartCam from './Experiments/SmartCam?raw';
-import PerformanceAPI from './Experiments/PerformanceAPI?raw';
-import HumanVerification from './Experiments/HumanVerification?raw';
-import ChatBot from './Experiments/ChatBot/ChatBot?raw';
-import Parallax from './Experiments/Parallax?raw';
-import DivMagicCompiler from './Experiments/DivMagicCompiler?raw';
-import KanbanBoard from './Experiments/KanbanBoard/KanbanBoard?raw';
-import kanbanStyle from './Experiments/KanbanBoard/style.css?raw';
-import FileCompressor from './Experiments/FileCompressor?raw';
-import MouseMove from './Experiments/MouseMove?raw';
+import Curried from './Problems/Curried?raw';
 
-const ExperimentalProject = () => {
+const JsProblems = () => {
 
   let topics = [
-    { id: 1, topic: "Web Worker", fname: "useWebWorker.js, WebWorkerIndex.jsx", file: [useWebWorker, WebWorkerIndex] },
-    { id: 2, topic: "Data Virtualization with and without library", fname: "DataVirtualization.jsx, Virtualization.jsx", file: [DataVirtualization, Virtualization] },
-    { id: 3, topic: "Camera Feature", fname: "SmartCam.jsx", file: [SmartCam] },
-    { id: 4, topic: "Performance API", fname: "PerformanceAPI.jsx", file: [PerformanceAPI] },
-    { id: 5, topic: "Human Verification", fname: "HumanVerification.jsx", file: [HumanVerification] },
-    { id: 6, topic: "Chat Bot", fname: "ChatBot.jsx", file: [ChatBot] },
-    { id: 7, topic: "Parallax using 'Atropos'", fname: "Parallax.jsx", file: [Parallax] },
-    { id: 8, topic: "Compiler using div tag only", fname: "DivMagicCompiler.jsx", file: [DivMagicCompiler] },
-    { id: 9, topic: "Kanban Board with inbuild accodion", fname: "KanbanBoard.jsx, style.css", file: [KanbanBoard, kanbanStyle] },
-    { id: 10, topic: "File Compressor", fname: "FileCompressor.jsx", file: [FileCompressor] },
-    { id: 11, topic: "Mouse Movement", fname: "MouseMove.jsx", file: [MouseMove] },
+    { id: 1, topic: "Curried Problems", fname: "Curried.js", file: [Curried] },
   ]
 
   const [copySuccess, setCopySuccess] = useState("");
@@ -99,7 +76,7 @@ const ExperimentalProject = () => {
         <div className="w-full px-2">
 
           <div className="w-full flex justify-center">
-            <h1 className='text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10'>Experimented Components</h1>
+            <h1 className='text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10'>JS Problems</h1>
           </div>
 
           <div className="flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4">
@@ -140,4 +117,4 @@ const ExperimentalProject = () => {
   )
 }
 
-export default ExperimentalProject
+export default JsProblems

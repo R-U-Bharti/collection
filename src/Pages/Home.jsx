@@ -4,6 +4,7 @@ import { GrReactjs } from "react-icons/gr";
 import mapple from '@/assets/mapple.svg'
 import entertaining from '@/assets/entertaining.jpg'
 import experiment from '@/assets/experiment.png'
+import js from '@/assets/js.png'
 import { decrypt, encrypt } from '@/Components/Common/PowerUpFunctions';
 import toast from 'react-hot-toast';
 
@@ -16,6 +17,7 @@ const Home = () => {
   const routes = [
     { path: '/projectBase', title: 'Project Base Components', icon: <GrReactjs color="#58c4dc" /> },
     { path: '/experiment', title: 'Experimented Components', image: experiment },
+    { path: '/problems', title: 'JS Problems', image: js },
     { link: 'https://r-u-bharti.github.io/mapple', title: 'Mapple Map Components', image: mapple },
     { link: 'https://r-u-bharti.github.io/demos', title: 'Entertaining Projects', image: entertaining },
   ]

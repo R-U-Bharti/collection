@@ -11,7 +11,21 @@ export default defineConfig({
       "@": path.resolve('./src')
     }
   },
+
+  esbuild: {
+    drop: ['console', 'debugger']
+  },
+
   build: {
-    chunkSizeWarningLimit: 3000
-  }
+    chunkSizeWarningLimit: 3000,
+    outDir: 'dist',
+    cssCodeSplit: true,
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true
+      }
+    }
+  },
+
 })
