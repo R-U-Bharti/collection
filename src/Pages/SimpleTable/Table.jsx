@@ -39,6 +39,7 @@ let column = [
     columns={column} 
     exportStatus={true} // pass it true, when you want export buttons
     more={true} // pass it true when you want accordion column
+    loader={} // for loading event
 />
 */
 
