@@ -17,6 +17,7 @@ import KanbanBoard from './Experiments/KanbanBoard/KanbanBoard?raw';
 import kanbanStyle from './Experiments/KanbanBoard/style.css?raw';
 import FileCompressor from './Experiments/FileCompressor?raw';
 import MouseMove from './Experiments/MouseMove?raw';
+import Carousel from './Experiments/Carousel?raw';
 
 const ExperimentalProject = () => {
 
@@ -32,6 +33,7 @@ const ExperimentalProject = () => {
     { id: 9, topic: "Kanban Board with inbuild accodion", fname: "KanbanBoard.jsx, style.css", file: [KanbanBoard, kanbanStyle] },
     { id: 10, topic: "File Compressor", fname: "FileCompressor.jsx", file: [FileCompressor] },
     { id: 11, topic: "Mouse Movement", fname: "MouseMove.jsx", file: [MouseMove] },
+    { id: 12, topic: "Carousel", fname: "Carousel.jsx", file: [Carousel] },
   ]
 
   const [copySuccess, setCopySuccess] = useState("");
