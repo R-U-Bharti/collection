@@ -1,4 +1,4 @@
-import{r as t,j as e}from"./index-PYZndrZ-.js";import{h as g,t as k,B as v}from"./StateRouteIndex-h7LEWJaX.js";const b=`// Background thread\r
+import{r as t,j as e}from"./index-BnBZavd7.js";import{h as g,t as k,B as v}from"./StateRouteIndex-CS6w-MFs.js";const b=`// Background thread\r
 \r
 import { useEffect, useState } from "react";\r
 \r
@@ -66,7 +66,7 @@ const WebWorkerIndex = () => {\r
   )\r
 }\r
 \r
-export default WebWorkerIndex`,W=`import { FixedSizeList } from 'react-window';\r
+export default WebWorkerIndex`,I=`import { FixedSizeList } from 'react-window';\r
 \r
 const DataVirtualization = () => {\r
 \r
@@ -94,7 +94,7 @@ const DataVirtualization = () => {\r
   )\r
 }\r
 \r
-export default DataVirtualization`,C=`import React, { useState, useRef, useEffect } from 'react';\r
+export default DataVirtualization`,W=`import React, { useState, useRef, useEffect } from 'react';\r
 \r
 const data = Array.from({ length: 1000000 }, (_, index) => new Object({ id: index, name: \`Item \${index}\` }));\r
 \r
@@ -167,7 +167,7 @@ const Virtualization = () => {\r
     );\r
 };\r
 \r
-export default Virtualization;`,I=`import { useFormik } from 'formik'\r
+export default Virtualization;`,C=`import { useFormik } from 'formik'\r
 import React, { useState, useRef, useEffect } from "react";\r
 import EXIF from 'exif-js'\r
 import * as yup from 'yup'\r
@@ -988,7 +988,7 @@ const DivMagicCompiler = () => {\r
     )\r
 }\r
 \r
-export default DivMagicCompiler`,T=`import React, { useState } from 'react'\r
+export default DivMagicCompiler`,F=`import React, { useState } from 'react'\r
 import './style.css'\r
 \r
 /*\r
@@ -1167,7 +1167,7 @@ const KanbanBoard = () => {\r
     )\r
 }\r
 \r
-export default KanbanBoard`,F=`/* Inbuilt accordion CSS */\r
+export default KanbanBoard`,T=`/* Inbuilt accordion CSS */\r
 details>* {\r
     user-select: none;\r
     transition: all;\r
@@ -1270,7 +1270,7 @@ summary::after {\r
     );\r
 };\r
 \r
-export default FileCompressor;`,H=`import React, { useEffect, useState } from 'react'\r
+export default FileCompressor;`,L=`import React, { useEffect, useState } from 'react'\r
 \r
 const MouseMove = () => {\r
 \r
@@ -1289,4 +1289,142 @@ const MouseMove = () => {\r
     )\r
 }\r
 \r
-export default MouseMove`,L=()=>{let p=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[b,w]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[W,C]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[I]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[N]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[S]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[D]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[R]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[j]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[T,F]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[E]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[H]}];const[f,o]=t.useState(""),[l,a]=t.useState(""),[h,s]=t.useState(!1),i=t.useRef([]),m=()=>{window.scrollTo({top:0,behavior:"smooth"})},y=r=>{i.current[r]&&i.current[r].scrollIntoView({behavior:"smooth",block:"start"})},x=r=>{y(r),l==r?a(""):a(r)},u=(r,c)=>{navigator.clipboard.writeText(r).then(()=>{o(c),setTimeout(()=>o(""),2e3)}).catch(d=>{})},n=()=>{window.scrollY>152?s(!0):s(!1)};return t.useEffect(()=>(window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}),[]),e.jsxs(e.Fragment,{children:[e.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:e.jsxs("div",{className:"w-full px-2",children:[e.jsx("div",{className:"w-full flex justify-center",children:e.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),e.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:p.map(r=>e.jsx(e.Fragment,{children:e.jsxs("div",{ref:c=>i.current[r==null?void 0:r.id]=c,className:`w-full transition-all duration-200 ${l==r.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[e.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${l==r.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>x(r.id),children:[r.topic," - ",e.jsxs("span",{className:"font-semibold italic",children:["(",r.fname,")"]})]}),l==r.id&&r.file.map((c,d)=>e.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[e.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>u(c,String(c)),children:[f==String(c)?"Copied":"Copy"," Code"]}),e.jsx(g,{className:"text-xs",language:"javascript",style:k,children:c},d)]}))]},r.id)}))})]})}),h&&e.jsx("div",{onClick:m,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:e.jsx("a",{className:"transform text-white ",children:e.jsx(v,{})})})]})};export{L as default};
+export default MouseMove`,H=`/*\r
+Readme\r
+=================================================================================\r
+props: imageList, option\r
+\r
+let imageList = [\r
+        {\r
+            image: '/image1.png',\r
+            title: 'Image 1 Title',\r
+\r
+            !when overlay is true\r
+            overlay: <>\r
+                <div className="h-full w-full bg-black/20">Title</div>\r
+            </>\r
+        },\r
+        {\r
+            image: 'image2.png',\r
+            title: 'Image 2 Title',\r
+        }\r
+    ]\r
+\r
+let option = {\r
+    width: '', // carouse width default 100%\r
+    height: '', // carousel height default 100%\r
+    cover: true, // image fit // default false\r
+    delay: 2000, // image change delay time\r
+    backgroundColor: 'transparent', // image background color\r
+    dots: false, // default true\r
+    overlay: true, // default false, if true, write your code for overlay,\r
+}\r
+        \r
+*/\r
+\r
+import { useEffect, useState } from "react"\r
+\r
+const Carousel = ({ imageList = [], option = {} }) => {\r
+\r
+    const [currentImageIndex, setCurrentImageIndex] = useState(0)\r
+    const [mouseInStatus, setMouseInStatus] = useState(false)\r
+\r
+    let options = option ?? {}\r
+\r
+    const changeImageFun = (type) => {\r
+        if (type === 'next') {\r
+            if (currentImageIndex === imageList.length - 1) {\r
+                setCurrentImageIndex(0)\r
+                return;\r
+            }\r
+            setCurrentImageIndex((prev) => prev + 1);\r
+        }\r
+        if (type === 'prev') {\r
+            if (currentImageIndex === 0) {\r
+                setCurrentImageIndex(imageList.length - 1)\r
+                return;\r
+            }\r
+            setCurrentImageIndex((prev) => prev - 1);\r
+        }\r
+    };\r
+\r
+    useEffect(() => {\r
+        !mouseInStatus && setTimeout(() => {\r
+            changeImageFun('next')\r
+        }, options?.delay ?? 3000)\r
+    }, [currentImageIndex, mouseInStatus]);\r
+\r
+    return (\r
+        <>\r
+            <div style={{ height: '100vh', width: '100vw', backdropFilter: 'blur(4px)' }}>\r
+\r
+                <div style={{ width: options?.width || '100%', height: options?.height || '70%', position: 'relative', overflow: 'hidden' }}\r
+                    onMouseEnter={() => setMouseInStatus(true)}\r
+                    onMouseLeave={() => setMouseInStatus(false)}>\r
+\r
+                    <div style={{ display: 'flex', transition: 'all 1s ease-in-out', width: '100%', height: '100%' }}>\r
+                        {\r
+                            imageList?.map((card, index) =>\r
+                                <div key={index} style={{ width: '100%', height: '100%', flexShrink: 0, position: 'relative', transform: \`translateX(-\${currentImageIndex * 100}%)\` }}>\r
+                                    <img src={card?.image} style={{ objectFit: options?.cover ? 'cover' : 'contain', width: '100%', height: '100%', backgroundColor: options?.backgroundColor }} alt="" />\r
+\r
+                                    {\r
+                                        !options?.overlay && card?.title &&\r
+                                        <div style={{ position: 'absolute', top: 0, left: 0, height: '100%', width: '100%', background: 'rgba(0, 0, 0, 0.1)', display: 'flex', alignItems: 'end', justifyContent: 'center', padding: '2.5rem' }}>\r
+                                            <div style={{ width: 'max-content', backdropFilter: 'blur(8px)', padding: '0.25rem 1rem', background: 'rgba(0, 0, 0, 0.3)', borderRadius: '0.375rem', border: '1px solid rgba(255, 255, 255, 0.3)' }}>\r
+                                                {card?.title}\r
+                                            </div>\r
+                                        </div>\r
+                                    }\r
+\r
+                                    {options?.overlay && <div style={{ position: 'absolute', top: 0, left: 0, height: '100%', width: '100%' }}>\r
+                                        {card?.overlay}\r
+                                    </div>}\r
+                                </div>\r
+                            )\r
+                        }\r
+                    </div>\r
+\r
+                    <div style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0, display: 'flex', justifyContent: 'space-between' }}>\r
+                        <div style={{ width: '10%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start', padding: '0.5rem' }}>\r
+                            <span onClick={() => changeImageFun('prev')} style={{ userSelect: 'none', padding: '0.125rem 0.5rem', backdropFilter: 'blur(8px)', cursor: 'pointer', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '9999px', background: 'rgba(255, 255, 255, 0.2)' }}>\r
+                                &lt;\r
+                            </span>\r
+                        </div>\r
+\r
+                        {(options?.dots == undefined || options?.dots == true) &&\r
+                            <div style={{ width: '80%', height: '100%', display: 'flex', alignItems: 'end', justifyContent: 'center', padding: '0.5rem 0' }}>\r
+                                <div style={{ width: 'max-content', backdropFilter: 'blur(8px)', padding: '0.25rem 0.75rem', background: 'rgba(0, 0, 0, 0.3)', borderRadius: '9999px', border: '1px solid rgba(255, 255, 255, 0.3)', display: 'flex', alignItems: 'center', gap: '0.375rem' }}>\r
+                                    {\r
+                                        Array.from({ length: imageList.length ?? 0 }).map((_, index) =>\r
+                                            <div key={index} onClick={() => setCurrentImageIndex(index)} style={{\r
+                                                transition: 'all 0.3s',\r
+                                                cursor: 'pointer',\r
+                                                height: '0.625rem',\r
+                                                width: '0.625rem',\r
+                                                borderRadius: '9999px',\r
+                                                border: '1px solid rgba(255, 255, 255, 0.5)',\r
+                                                background: currentImageIndex === index ? 'rgba(0, 0, 0, 1)' : ''\r
+                                            }} />\r
+                                        )\r
+                                    }\r
+                                </div>\r
+                            </div>\r
+                        }\r
+\r
+                        <div style={{ width: '10%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'end', padding: '0.5rem' }}>\r
+                            <span onClick={() => changeImageFun('next')} style={{ userSelect: 'none', padding: '0.125rem 0.5rem', backdropFilter: 'blur(8px)', cursor: 'pointer', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '9999px', background: 'rgba(255, 255, 255, 0.2)' }}>\r
+                                &gt;\r
+                            </span>\r
+                        </div>\r
+                    </div>\r
+\r
+                </div>\r
+\r
+            </div>\r
+\r
+        </>\r
+    )\r
+}\r
+\r
+export default Carousel`,z=()=>{let p=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[b,w]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[I,W]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[C]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[N]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[S]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[D]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[R]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[j]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[F,T]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[E]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[L]},{id:12,topic:"Carousel",fname:"Carousel.jsx",file:[H]}];const[f,o]=t.useState(""),[l,a]=t.useState(""),[h,s]=t.useState(!1),i=t.useRef([]),m=()=>{window.scrollTo({top:0,behavior:"smooth"})},y=r=>{i.current[r]&&i.current[r].scrollIntoView({behavior:"smooth",block:"start"})},u=r=>{y(r),l==r?a(""):a(r)},x=(r,c)=>{navigator.clipboard.writeText(r).then(()=>{o(c),setTimeout(()=>o(""),2e3)}).catch(d=>{})},n=()=>{window.scrollY>152?s(!0):s(!1)};return t.useEffect(()=>(window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}),[]),e.jsxs(e.Fragment,{children:[e.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:e.jsxs("div",{className:"w-full px-2",children:[e.jsx("div",{className:"w-full flex justify-center",children:e.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),e.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:p.map(r=>e.jsx(e.Fragment,{children:e.jsxs("div",{ref:c=>i.current[r==null?void 0:r.id]=c,className:`w-full transition-all duration-200 ${l==r.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[e.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${l==r.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>u(r.id),children:[r.topic," - ",e.jsxs("span",{className:"font-semibold italic",children:["(",r.fname,")"]})]}),l==r.id&&r.file.map((c,d)=>e.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[e.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>x(c,String(c)),children:[f==String(c)?"Copied":"Copy"," Code"]}),e.jsx(g,{className:"text-xs",language:"javascript",style:k,children:c},d)]}))]},r.id)}))})]})}),h&&e.jsx("div",{onClick:m,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:e.jsx("a",{className:"transform text-white ",children:e.jsx(v,{})})})]})};export{z as default};
