@@ -1,4 +1,4 @@
-import{r as t,j as e}from"./index-BnBZavd7.js";import{h as g,t as k,B as v}from"./StateRouteIndex-CS6w-MFs.js";const b=`// Background thread\r
+import{r as t,j as e}from"./index-CGs1csNH.js";import{h as g,t as k,B as v}from"./StateRouteIndex-rafSp5FM.js";const b=`// Background thread\r
 \r
 import { useEffect, useState } from "react";\r
 \r
@@ -66,7 +66,7 @@ const WebWorkerIndex = () => {\r
   )\r
 }\r
 \r
-export default WebWorkerIndex`,I=`import { FixedSizeList } from 'react-window';\r
+export default WebWorkerIndex`,C=`import { FixedSizeList } from 'react-window';\r
 \r
 const DataVirtualization = () => {\r
 \r
@@ -94,7 +94,7 @@ const DataVirtualization = () => {\r
   )\r
 }\r
 \r
-export default DataVirtualization`,W=`import React, { useState, useRef, useEffect } from 'react';\r
+export default DataVirtualization`,I=`import React, { useState, useRef, useEffect } from 'react';\r
 \r
 const data = Array.from({ length: 1000000 }, (_, index) => new Object({ id: index, name: \`Item \${index}\` }));\r
 \r
@@ -167,7 +167,7 @@ const Virtualization = () => {\r
     );\r
 };\r
 \r
-export default Virtualization;`,C=`import { useFormik } from 'formik'\r
+export default Virtualization;`,W=`import { useFormik } from 'formik'\r
 import React, { useState, useRef, useEffect } from "react";\r
 import EXIF from 'exif-js'\r
 import * as yup from 'yup'\r
@@ -954,7 +954,7 @@ const Parallax = () => {\r
     )\r
 }\r
 \r
-export default Parallax`,j=`import { useState } from 'react'\r
+export default Parallax`,T=`import { useState } from 'react'\r
 \r
 const DivMagicCompiler = () => {\r
 \r
@@ -988,7 +988,7 @@ const DivMagicCompiler = () => {\r
     )\r
 }\r
 \r
-export default DivMagicCompiler`,F=`import React, { useState } from 'react'\r
+export default DivMagicCompiler`,j=`import React, { useState } from 'react'\r
 import './style.css'\r
 \r
 /*\r
@@ -1167,7 +1167,7 @@ const KanbanBoard = () => {\r
     )\r
 }\r
 \r
-export default KanbanBoard`,T=`/* Inbuilt accordion CSS */\r
+export default KanbanBoard`,F=`/* Inbuilt accordion CSS */\r
 details>* {\r
     user-select: none;\r
     transition: all;\r
@@ -1427,4 +1427,49 @@ const Carousel = ({ imageList = [], option = {} }) => {\r
     )\r
 }\r
 \r
-export default Carousel`,z=()=>{let p=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[b,w]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[I,W]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[C]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[N]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[S]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[D]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[R]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[j]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[F,T]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[E]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[L]},{id:12,topic:"Carousel",fname:"Carousel.jsx",file:[H]}];const[f,o]=t.useState(""),[l,a]=t.useState(""),[h,s]=t.useState(!1),i=t.useRef([]),m=()=>{window.scrollTo({top:0,behavior:"smooth"})},y=r=>{i.current[r]&&i.current[r].scrollIntoView({behavior:"smooth",block:"start"})},u=r=>{y(r),l==r?a(""):a(r)},x=(r,c)=>{navigator.clipboard.writeText(r).then(()=>{o(c),setTimeout(()=>o(""),2e3)}).catch(d=>{})},n=()=>{window.scrollY>152?s(!0):s(!1)};return t.useEffect(()=>(window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}),[]),e.jsxs(e.Fragment,{children:[e.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:e.jsxs("div",{className:"w-full px-2",children:[e.jsx("div",{className:"w-full flex justify-center",children:e.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),e.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:p.map(r=>e.jsx(e.Fragment,{children:e.jsxs("div",{ref:c=>i.current[r==null?void 0:r.id]=c,className:`w-full transition-all duration-200 ${l==r.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[e.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${l==r.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>u(r.id),children:[r.topic," - ",e.jsxs("span",{className:"font-semibold italic",children:["(",r.fname,")"]})]}),l==r.id&&r.file.map((c,d)=>e.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[e.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>x(c,String(c)),children:[f==String(c)?"Copied":"Copy"," Code"]}),e.jsx(g,{className:"text-xs",language:"javascript",style:k,children:c},d)]}))]},r.id)}))})]})}),h&&e.jsx("div",{onClick:m,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:e.jsx("a",{className:"transform text-white ",children:e.jsx(v,{})})})]})};export{z as default};
+export default Carousel`,_=`import { useTransition } from "react";\r
+import { useState } from "react";\r
+\r
+const TransitionHook = () => {\r
+\r
+    let data = Array.from({ length: 100000 }, (_, index) => \`Data0\${index}\`)\r
+\r
+    const [result, setResult] = useState(data)\r
+    const [pending, setTransition] = useTransition(data)\r
+\r
+    const filterFun = (query) => {\r
+        const filteredData = data.filter(item => item.toLocaleLowerCase().includes(query.toLocaleLowerCase()))\r
+        return filteredData;\r
+    }\r
+\r
+    const handleChange = (e) => {\r
+        const { value } = e.target;\r
+\r
+        setTransition(() => {\r
+            let filterData = filterFun(value)\r
+            setResult(filterData)\r
+        })\r
+\r
+    }\r
+\r
+    return (\r
+        <div className="h-screen w-screen p-10 flex justify-center">\r
+\r
+            <div className="w-[30%]">\r
+\r
+                <input type="search" onChange={handleChange} className="mb-3 w-full bg-black/40 border border-white/20 focus:outline-none px-2 py-1" placeholder="Search here" />\r
+\r
+                <div className="flex flex-col gap-2 overflow-auto h-[500px] w-full">\r
+                    {pending ? <span className="px-2 py-1 bg-blue-700/40">Loading...</span> : null}\r
+                    {result.map((item, index) => (\r
+                        <span className="px-2 py-1 bg-blue-700/40" key={index} value={item}>{item}</span>\r
+                    ))}\r
+                </div>\r
+\r
+            </div>\r
+\r
+        </div>\r
+    )\r
+}\r
+\r
+export default TransitionHook`,U=()=>{let p=[{id:1,topic:"Web Worker",fname:"useWebWorker.js, WebWorkerIndex.jsx",file:[b,w]},{id:13,topic:"useTransition",fname:"TransitionHook.jsx",file:[_]},{id:2,topic:"Data Virtualization with and without library",fname:"DataVirtualization.jsx, Virtualization.jsx",file:[C,I]},{id:3,topic:"Camera Feature",fname:"SmartCam.jsx",file:[W]},{id:4,topic:"Performance API",fname:"PerformanceAPI.jsx",file:[N]},{id:5,topic:"Human Verification",fname:"HumanVerification.jsx",file:[S]},{id:6,topic:"Chat Bot",fname:"ChatBot.jsx",file:[D]},{id:7,topic:"Parallax using 'Atropos'",fname:"Parallax.jsx",file:[R]},{id:8,topic:"Compiler using div tag only",fname:"DivMagicCompiler.jsx",file:[T]},{id:9,topic:"Kanban Board with inbuild accodion",fname:"KanbanBoard.jsx, style.css",file:[j,F]},{id:10,topic:"File Compressor",fname:"FileCompressor.jsx",file:[E]},{id:11,topic:"Mouse Movement",fname:"MouseMove.jsx",file:[L]},{id:12,topic:"Carousel",fname:"Carousel.jsx",file:[H]}];const[f,a]=t.useState(""),[l,o]=t.useState(""),[h,s]=t.useState(!1),i=t.useRef([]),m=()=>{window.scrollTo({top:0,behavior:"smooth"})},y=r=>{i.current[r]&&i.current[r].scrollIntoView({behavior:"smooth",block:"start"})},u=r=>{y(r),l==r?o(""):o(r)},x=(r,c)=>{navigator.clipboard.writeText(r).then(()=>{a(c),setTimeout(()=>a(""),2e3)}).catch(d=>{})},n=()=>{window.scrollY>152?s(!0):s(!1)};return t.useEffect(()=>(window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}),[]),e.jsxs(e.Fragment,{children:[e.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:e.jsxs("div",{className:"w-full px-2",children:[e.jsx("div",{className:"w-full flex justify-center",children:e.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"Experimented Components"})}),e.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:p.map(r=>e.jsx(e.Fragment,{children:e.jsxs("div",{ref:c=>i.current[r==null?void 0:r.id]=c,className:`w-full transition-all duration-200 ${l==r.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[e.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${l==r.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>u(r.id),children:[r.topic," - ",e.jsxs("span",{className:"font-semibold italic",children:["(",r.fname,")"]})]}),l==r.id&&r.file.map((c,d)=>e.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[e.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>x(c,String(c)),children:[f==String(c)?"Copied":"Copy"," Code"]}),e.jsx(g,{className:"text-xs",language:"javascript",style:k,children:c},d)]}))]},r.id)}))})]})}),h&&e.jsx("div",{onClick:m,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:e.jsx("a",{className:"transform text-white ",children:e.jsx(v,{})})})]})};export{U as default};
