@@ -18,11 +18,13 @@ import kanbanStyle from './Experiments/KanbanBoard/style.css?raw';
 import FileCompressor from './Experiments/FileCompressor?raw';
 import MouseMove from './Experiments/MouseMove?raw';
 import Carousel from './Experiments/Carousel?raw';
+import TransitionHook from './Experiments/TransitionHook?raw';
 
 const ExperimentalProject = () => {
 
   let topics = [
     { id: 1, topic: "Web Worker", fname: "useWebWorker.js, WebWorkerIndex.jsx", file: [useWebWorker, WebWorkerIndex] },
+    { id: 13, topic: "useTransition", fname: "TransitionHook.jsx", file: [TransitionHook] },
     { id: 2, topic: "Data Virtualization with and without library", fname: "DataVirtualization.jsx, Virtualization.jsx", file: [DataVirtualization, Virtualization] },
     { id: 3, topic: "Camera Feature", fname: "SmartCam.jsx", file: [SmartCam] },
     { id: 4, topic: "Performance API", fname: "PerformanceAPI.jsx", file: [PerformanceAPI] },
