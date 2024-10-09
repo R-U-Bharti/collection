@@ -35,6 +35,49 @@ export const convertEpochToDateAndTime = (epochTimestamp) => {
     return dateString;
 }
 
+// Epoch to UTC Date and time Stamp
+export const convertEpochToUTCDateAndTime = (epoch) => {
+    // Create a new Date object from the epoch timestamp
+    const date = new Date(parseInt(epoch));
+
+    // Extract day, month, year, hours, and minutes using UTC methods
+    const day = String(date.getUTCDate()).padStart(2, '0');
+    const month = String(date.getUTCMonth() + 1).padStart(2, '0'); // Month is zero-indexed
+    const year = date.getUTCFullYear();
+
+    // Extract hours and minutes in UTC
+    let hours = date.getUTCHours();
+    const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+
+    // Determine AM/PM
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12; // Convert to 12-hour format
+
+    // Format the date string as DD-MM-YYYY HH:MM AM/PM
+    return `${day}-${month}-${year} ${hours}:${minutes} ${ampm}`;
+}
+
+// Time stamp to UTC Date and time
+export const convertTimeStampToDateAndTime = (timeStamp) => {
+    const date = new Date(timeStamp);
+
+    // Extract day, month, year, hours, and minutes using UTC methods
+    const day = String(date.getUTCDate()).padStart(2, '0');
+    const month = String(date.getUTCMonth() + 1).padStart(2, '0'); // Month is zero-indexed
+    const year = date.getUTCFullYear();
+
+    // Extract hours and minutes in UTC
+    let hours = date.getUTCHours();
+    const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+
+    // Determine AM/PM
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12; // Convert to 12-hour format
+
+    // Format the date string as DD-MM-YYYY HH:MM AM/PM
+    return `${day}-${month}-${year} ${hours}:${minutes} ${ampm}`;
+}
+
 //function to get current date
 export const getCurrentDate = () => {
     let cDate = new Date()
