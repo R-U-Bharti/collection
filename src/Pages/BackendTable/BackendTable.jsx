@@ -9,6 +9,11 @@ let column = [
         accessor: "id", // key
         Cell: ({cell}) => (cell.row.original.id) // Your cell | you can also add button here by wraping in <></>
         width: "%" // OPTIONAL, add width of cell
+        option: [ // OPTIONAL, when there is id in your cell, and want to show meaning while export
+            {key: value},
+            .....
+            .....
+        ],
     },
 
     <!-- Accordion Column -->
