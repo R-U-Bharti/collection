@@ -14,6 +14,7 @@ let column = [
             .....
             .....
         ],
+        sortType: (rowA, rowB) => {return {}} // OPTIONAL, For manual sort
     },
 
     <!-- Accordion Column -->

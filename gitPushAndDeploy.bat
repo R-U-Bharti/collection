@@ -1,6 +1,8 @@
 @echo off
 
-echo GIT PUSH
+echo ==========================
+echo || GIT PUSH AND DEPLOY  ||
+echo ==========================
 
 git add .
 
