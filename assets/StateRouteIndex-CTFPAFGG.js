@@ -1,5 +1,5 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/ExperimentalProject-C36nUlAt.js","assets/index-Kh0NgJ00.js","assets/index-Di6LWebo.css","assets/Home-BbnqlbLO.js"])))=>i.map(i=>d[i]);
-import{R as te,c as H,g as Ug,r as oe,j as G,a as zf,_ as $g,b as Hf}from"./index-Kh0NgJ00.js";function jf(e,t){if(e==null)return{};var r={};for(var a in e)if({}.hasOwnProperty.call(e,a)){if(t.includes(a))continue;r[a]=e[a]}return r}function Vf(e,t){if(e==null)return{};var r,a,n=jf(e,t);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(e);for(a=0;a<i.length;a++)r=i[a],t.includes(r)||{}.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function jo(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,a=Array(t);r<t;r++)a[r]=e[r];return a}function Wf(e){if(Array.isArray(e))return jo(e)}function Yf(e){if(typeof Symbol<"u"&&e[Symbol.iterator]!=null||e["@@iterator"]!=null)return Array.from(e)}function Kf(e,t){if(e){if(typeof e=="string")return jo(e,t);var r={}.toString.call(e).slice(8,-1);return r==="Object"&&e.constructor&&(r=e.constructor.name),r==="Map"||r==="Set"?Array.from(e):r==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?jo(e,t):void 0}}function Xf(){throw new TypeError(`Invalid attempt to spread non-iterable instance.
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/ExperimentalProject-_7y7IFlm.js","assets/index-6gVcZbbJ.js","assets/index-DUDKIQPL.css","assets/Home-FQY03s3R.js"])))=>i.map(i=>d[i]);
+import{R as te,c as H,g as Ug,r as oe,j as G,a as zf,_ as $g,b as Hf}from"./index-6gVcZbbJ.js";function jf(e,t){if(e==null)return{};var r={};for(var a in e)if({}.hasOwnProperty.call(e,a)){if(t.includes(a))continue;r[a]=e[a]}return r}function Vf(e,t){if(e==null)return{};var r,a,n=jf(e,t);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(e);for(a=0;a<i.length;a++)r=i[a],t.includes(r)||{}.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function jo(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,a=Array(t);r<t;r++)a[r]=e[r];return a}function Wf(e){if(Array.isArray(e))return jo(e)}function Yf(e){if(typeof Symbol<"u"&&e[Symbol.iterator]!=null||e["@@iterator"]!=null)return Array.from(e)}function Kf(e,t){if(e){if(typeof e=="string")return jo(e,t);var r={}.toString.call(e).slice(8,-1);return r==="Object"&&e.constructor&&(r=e.constructor.name),r==="Map"||r==="Set"?Array.from(e):r==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?jo(e,t):void 0}}function Xf(){throw new TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function Zf(e){return Wf(e)||Yf(e)||Kf(e)||Xf()}function $e(e){"@babel/helpers - typeof";return $e=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},$e(e)}function Qf(e,t){if($e(e)!="object"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var a=r.call(e,t||"default");if($e(a)!="object")return a;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function Jf(e){var t=Qf(e,"string");return $e(t)=="symbol"?t:t+""}function Gg(e,t,r){return(t=Jf(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function Vo(){return Vo=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var a in r)({}).hasOwnProperty.call(r,a)&&(e[a]=r[a])}return e},Vo.apply(null,arguments)}function Ls(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);t&&(a=a.filter(function(n){return Object.getOwnPropertyDescriptor(e,n).enumerable})),r.push.apply(r,a)}return r}function Ie(e){for(var t=1;t<arguments.length;t++){var r=arguments[t]!=null?arguments[t]:{};t%2?Ls(Object(r),!0).forEach(function(a){Gg(e,a,r[a])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):Ls(Object(r)).forEach(function(a){Object.defineProperty(e,a,Object.getOwnPropertyDescriptor(r,a))})}return e}function e0(e){var t=e.length;if(t===0||t===1)return e;if(t===2)return[e[0],e[1],"".concat(e[0],".").concat(e[1]),"".concat(e[1],".").concat(e[0])];if(t===3)return[e[0],e[1],e[2],"".concat(e[0],".").concat(e[1]),"".concat(e[0],".").concat(e[2]),"".concat(e[1],".").concat(e[0]),"".concat(e[1],".").concat(e[2]),"".concat(e[2],".").concat(e[0]),"".concat(e[2],".").concat(e[1]),"".concat(e[0],".").concat(e[1],".").concat(e[2]),"".concat(e[0],".").concat(e[2],".").concat(e[1]),"".concat(e[1],".").concat(e[0],".").concat(e[2]),"".concat(e[1],".").concat(e[2],".").concat(e[0]),"".concat(e[2],".").concat(e[0],".").concat(e[1]),"".concat(e[2],".").concat(e[1],".").concat(e[0])];if(t>=4)return[e[0],e[1],e[2],e[3],"".concat(e[0],".").concat(e[1]),"".concat(e[0],".").concat(e[2]),"".concat(e[0],".").concat(e[3]),"".concat(e[1],".").concat(e[0]),"".concat(e[1],".").concat(e[2]),"".concat(e[1],".").concat(e[3]),"".concat(e[2],".").concat(e[0]),"".concat(e[2],".").concat(e[1]),"".concat(e[2],".").concat(e[3]),"".concat(e[3],".").concat(e[0]),"".concat(e[3],".").concat(e[1]),"".concat(e[3],".").concat(e[2]),"".concat(e[0],".").concat(e[1],".").concat(e[2]),"".concat(e[0],".").concat(e[1],".").concat(e[3]),"".concat(e[0],".").concat(e[2],".").concat(e[1]),"".concat(e[0],".").concat(e[2],".").concat(e[3]),"".concat(e[0],".").concat(e[3],".").concat(e[1]),"".concat(e[0],".").concat(e[3],".").concat(e[2]),"".concat(e[1],".").concat(e[0],".").concat(e[2]),"".concat(e[1],".").concat(e[0],".").concat(e[3]),"".concat(e[1],".").concat(e[2],".").concat(e[0]),"".concat(e[1],".").concat(e[2],".").concat(e[3]),"".concat(e[1],".").concat(e[3],".").concat(e[0]),"".concat(e[1],".").concat(e[3],".").concat(e[2]),"".concat(e[2],".").concat(e[0],".").concat(e[1]),"".concat(e[2],".").concat(e[0],".").concat(e[3]),"".concat(e[2],".").concat(e[1],".").concat(e[0]),"".concat(e[2],".").concat(e[1],".").concat(e[3]),"".concat(e[2],".").concat(e[3],".").concat(e[0]),"".concat(e[2],".").concat(e[3],".").concat(e[1]),"".concat(e[3],".").concat(e[0],".").concat(e[1]),"".concat(e[3],".").concat(e[0],".").concat(e[2]),"".concat(e[3],".").concat(e[1],".").concat(e[0]),"".concat(e[3],".").concat(e[1],".").concat(e[2]),"".concat(e[3],".").concat(e[2],".").concat(e[0]),"".concat(e[3],".").concat(e[2],".").concat(e[1]),"".concat(e[0],".").concat(e[1],".").concat(e[2],".").concat(e[3]),"".concat(e[0],".").concat(e[1],".").concat(e[3],".").concat(e[2]),"".concat(e[0],".").concat(e[2],".").concat(e[1],".").concat(e[3]),"".concat(e[0],".").concat(e[2],".").concat(e[3],".").concat(e[1]),"".concat(e[0],".").concat(e[3],".").concat(e[1],".").concat(e[2]),"".concat(e[0],".").concat(e[3],".").concat(e[2],".").concat(e[1]),"".concat(e[1],".").concat(e[0],".").concat(e[2],".").concat(e[3]),"".concat(e[1],".").concat(e[0],".").concat(e[3],".").concat(e[2]),"".concat(e[1],".").concat(e[2],".").concat(e[0],".").concat(e[3]),"".concat(e[1],".").concat(e[2],".").concat(e[3],".").concat(e[0]),"".concat(e[1],".").concat(e[3],".").concat(e[0],".").concat(e[2]),"".concat(e[1],".").concat(e[3],".").concat(e[2],".").concat(e[0]),"".concat(e[2],".").concat(e[0],".").concat(e[1],".").concat(e[3]),"".concat(e[2],".").concat(e[0],".").concat(e[3],".").concat(e[1]),"".concat(e[2],".").concat(e[1],".").concat(e[0],".").concat(e[3]),"".concat(e[2],".").concat(e[1],".").concat(e[3],".").concat(e[0]),"".concat(e[2],".").concat(e[3],".").concat(e[0],".").concat(e[1]),"".concat(e[2],".").concat(e[3],".").concat(e[1],".").concat(e[0]),"".concat(e[3],".").concat(e[0],".").concat(e[1],".").concat(e[2]),"".concat(e[3],".").concat(e[0],".").concat(e[2],".").concat(e[1]),"".concat(e[3],".").concat(e[1],".").concat(e[0],".").concat(e[2]),"".concat(e[3],".").concat(e[1],".").concat(e[2],".").concat(e[0]),"".concat(e[3],".").concat(e[2],".").concat(e[0],".").concat(e[1]),"".concat(e[3],".").concat(e[2],".").concat(e[1],".").concat(e[0])]}var nt={};function t0(e){if(e.length===0||e.length===1)return e;var t=e.join(".");return nt[t]||(nt[t]=e0(e)),nt[t]}function r0(e){var t=arguments.length>1&&arguments[1]!==void 0?arguments[1]:{},r=arguments.length>2?arguments[2]:void 0,a=e.filter(function(i){return i!=="token"}),n=t0(a);return n.reduce(function(i,u){return Ie(Ie({},i),r[u])},t)}function Fs(e){return e.join(" ")}function a0(e,t){var r=0;return function(a){return r+=1,a.map(function(n,i){return qg({node:n,stylesheet:e,useInlineStyles:t,key:"code-segment-".concat(r,"-").concat(i)})})}}function qg(e){var t=e.node,r=e.stylesheet,a=e.style,n=a===void 0?{}:a,i=e.useInlineStyles,u=e.key,o=t.properties,d=t.type,s=t.tagName,l=t.value;if(d==="text")return l;if(s){var b=a0(r,i),g;if(!i)g=Ie(Ie({},o),{},{className:Fs(o.className)});else{var f=Object.keys(r).reduce(function(A,p){return p.split(".").forEach(function(c){A.includes(c)||A.push(c)}),A},[]),h=o.className&&o.className.includes("token")?["token"]:[],E=o.className&&h.concat(o.className.filter(function(A){return!f.includes(A)}));g=Ie(Ie({},o),{},{className:Fs(E)||void 0,style:r0(o.className,Object.assign({},o.style,n),r)})}var x=b(t.children);return te.createElement(s,Vo({key:u},g),x)}}const n0=function(e,t){var r=e.listLanguages();return r.indexOf(t)!==-1};var i0=["language","children","style","customStyle","codeTagProps","useInlineStyles","showLineNumbers","showInlineLineNumbers","startingLineNumber","lineNumberContainerStyle","lineNumberStyle","wrapLines","wrapLongLines","lineProps","renderer","PreTag","CodeTag","code","astGenerator"];function Bs(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);t&&(a=a.filter(function(n){return Object.getOwnPropertyDescriptor(e,n).enumerable})),r.push.apply(r,a)}return r}function pe(e){for(var t=1;t<arguments.length;t++){var r=arguments[t]!=null?arguments[t]:{};t%2?Bs(Object(r),!0).forEach(function(a){Gg(e,a,r[a])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):Bs(Object(r)).forEach(function(a){Object.defineProperty(e,a,Object.getOwnPropertyDescriptor(r,a))})}return e}var o0=/\n/g;function s0(e){return e.match(o0)}function l0(e){var t=e.lines,r=e.startingLineNumber,a=e.style;return t.map(function(n,i){var u=i+r;return te.createElement("span",{key:"line-".concat(i),className:"react-syntax-highlighter-line-number",style:typeof a=="function"?a(u):a},"".concat(u,`
 `))})}function u0(e){var t=e.codeString,r=e.codeStyle,a=e.containerStyle,n=a===void 0?{float:"left",paddingRight:"10px"}:a,i=e.numberStyle,u=i===void 0?{}:i,o=e.startingLineNumber;return te.createElement("code",{style:Object.assign({},r,n)},l0({lines:t.replace(/\n$/,"").split(`
 `),style:u,startingLineNumber:o}))}function c0(e){return"".concat(e.toString().length,".25em")}function zg(e,t){return{type:"element",tagName:"span",properties:{key:"line-number--".concat(e),className:["comment","linenumber","react-syntax-highlighter-line-number"],style:t},children:[{type:"text",value:e}]}}function Hg(e,t,r){var a={display:"inline-block",minWidth:c0(r),paddingRight:"1em",textAlign:"right",userSelect:"none"},n=typeof e=="function"?e(t):e,i=pe(pe({},a),n);return i}function Ye(e){var t=e.children,r=e.lineNumber,a=e.lineNumberStyle,n=e.largestLineNumber,i=e.showInlineLineNumbers,u=e.lineProps,o=u===void 0?{}:u,d=e.className,s=d===void 0?[]:d,l=e.showLineNumbers,b=e.wrapLongLines,g=typeof o=="function"?o(r):o;if(g.className=s,r&&i){var f=Hg(a,r,n);t.unshift(zg(r,f))}return b&l&&(g.style=pe(pe({},g.style),{},{display:"flex"})),{type:"element",tagName:"span",properties:g,children:t}}function jg(e){for(var t=arguments.length>1&&arguments[1]!==void 0?arguments[1]:[],r=arguments.length>2&&arguments[2]!==void 0?arguments[2]:[],a=0;a<e.length;a++){var n=e[a];if(n.type==="text")r.push(Ye({children:[n],className:Zf(new Set(t))}));else if(n.children){var i=t.concat(n.properties.className);jg(n.children,i).forEach(function(u){return r.push(u)})}}return r}function d0(e,t,r,a,n,i,u,o,d){var s,l=jg(e.value),b=[],g=-1,f=0;function h(S,y){var _=arguments.length>2&&arguments[2]!==void 0?arguments[2]:[];return Ye({children:S,lineNumber:y,lineNumberStyle:o,largestLineNumber:u,showInlineLineNumbers:n,lineProps:r,className:_,showLineNumbers:a,wrapLongLines:d})}function E(S,y){if(a&&y&&n){var _=Hg(o,y,u);S.unshift(zg(y,_))}return S}function x(S,y){var _=arguments.length>2&&arguments[2]!==void 0?arguments[2]:[];return t||_.length>0?h(S,y,_):E(S,y)}for(var A=function(){var y=l[f],_=y.children[0].value,C=s0(_);if(C){var R=_.split(`
@@ -38,201 +38,201 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   "exclude": [\r
     "node_modules"\r
   ]\r
-}`,RA=`import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  base: "/collection",
-  resolve: {
-    alias: {
-      "@": path.resolve('./src')
-    }
-  },
-
-  esbuild: {
-    drop: ['console', 'debugger']
-  },
-
-  build: {
-    chunkSizeWarningLimit: 3000,
-    outDir: 'dist',
-    cssCodeSplit: true,
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
-      }
-    }
-  },
-
-})
-`,NA=`@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: rgb(28, 28, 28);
-    color: whitesmoke;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(146, 146, 146, 0.3);
-    border: 3px solid transparent;
-    border-radius: 9px;
-    background-clip: content-box;
-}
-
-::-webkit-scrollbar {
-    background: transparent;
-    width: 8px;
-    height: 9px;
-}
-
-dialog:-internal-dialog-in-top-layer {
-    position: fixed;
-    inset-block-start: 0px;
-    inset-block-end: 0px;
-    max-width: 99.9%;
-    max-height: 99.8%;
-    user-select: text;
-    visibility: visible;
-    overflow: auto;
-}
-
-input[type='file']::file-selector-button {
-    font-family: "Montserrat", sans-serif;
-    position: absolute;
-    right: -4px;
-    top: 0;
-    height: 100%;
-    border: none;
-    padding: 5px 15px;
-    color: #292929cd;
-    cursor: pointer;
-    font-size: 13px;
-    background-color: #dadadaf2;
-}
-
-input[type=file]::file-selector-button:hover {
-    background-color: #a9a9a9f2;
-}
-
-/* React-Select Library CSS */
-.css-1u9des2-indicatorSeparator {
-    -webkit-align-self: stretch;
-    -ms-flex-item-align: stretch;
-    align-self: stretch;
-    width: 1px;
-    background-color: hsl(0, 0%, 80%);
-    margin-bottom: 0px !important;
-    margin-top: 0px !important;
-    box-sizing: border-box;
-}
-
-.css-13cymwt-control {
-    min-height: max-content !important;
-}
-
-.css-hlgwow {
-    padding: 0rem 0.5rem !important;
-}
-
-.css-1u9des2-indicatorSeparator {
-    visibility: hidden;
-}
-
-.css-16xfy0z-control,
-.css-t3ipsp-control {
-    min-height: 10px !important;
-}
-
-.css-1xc3v61-indicatorContainer,
-.css-15lsz6c-indicatorContainer,
-.css-1xc3v61-indicatorContainer {
-    padding: 0px 8px !important;
-}
-
-.css-13cymwt-control {
-    border: 1px solid #d4d4d8 !important;
-    outline: none !important;
-}
-
-.css-1dyz3mf {
-    padding: 1px 1px !important;
-}
-
-/* Skeleton CSS */
-.animate {
-    animation: shimmer 2s infinite linear;
-    background: linear-gradient(to right, #fff 4%, #e2e2e2 25%, #fff 36%);
-    background-size: 1000px 100%;
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: -1000px 0;
-    }
-
-    100% {
-        background-position: 1000px 0;
-    }
-}
-
-/* Range Slider CSS */
-input[type='range']::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 6px;
-    background: linear-gradient(to right, #132438 var(--value), #e2e8f0 var(--value));
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type='range']::-moz-range-track {
-    width: 100%;
-    height: 6px;
-    background: linear-gradient(to right, #132438 var(--value), #e2e8f0 var(--value));
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    z-index: 999;
-    appearance: none;
-    width: 24px;
-    height: 24px;
-    background: url('./assets/slider.svg') no-repeat center;
-    background-size: contain;
-    cursor: pointer;
-    border: none;
-    background-position: center;
-
-    margin-top: -11px;
-}
-
-input[type='range']::-moz-range-thumb {
-    width: 24px;
-    height: 24px;
-    background: url('./assets/slider.svg') no-repeat center;
-    background-size: contain;
-    cursor: pointer;
-    border: none;
-    background-position: center;
-
-    margin-top: -11px;
+}`,RA=`import { defineConfig } from 'vite'\r
+import react from '@vitejs/plugin-react'\r
+import path from 'path'\r
+\r
+// https://vitejs.dev/config/\r
+export default defineConfig({\r
+  plugins: [react()],\r
+  base: "/collection",\r
+  resolve: {\r
+    alias: {\r
+      "@": path.resolve('./src')\r
+    }\r
+  },\r
+\r
+  esbuild: {\r
+    drop: ['console', 'debugger']\r
+  },\r
+\r
+  build: {\r
+    chunkSizeWarningLimit: 3000,\r
+    outDir: 'dist',\r
+    cssCodeSplit: true,\r
+    terserOptions: {\r
+      compress: {\r
+        drop_console: true,\r
+        drop_debugger: true\r
+      }\r
+    }\r
+  },\r
+\r
+})\r
+`,NA=`@tailwind base;\r
+@tailwind components;\r
+@tailwind utilities;\r
+\r
+* {\r
+    margin: 0;\r
+    padding: 0;\r
+    box-sizing: border-box;\r
+}\r
+\r
+body {\r
+    background-color: rgb(28, 28, 28);\r
+    color: whitesmoke;\r
+}\r
+\r
+::-webkit-scrollbar-track {\r
+    border-radius: 5px;\r
+}\r
+\r
+::-webkit-scrollbar-thumb {\r
+    background-color: rgba(146, 146, 146, 0.3);\r
+    border: 3px solid transparent;\r
+    border-radius: 9px;\r
+    background-clip: content-box;\r
+}\r
+\r
+::-webkit-scrollbar {\r
+    background: transparent;\r
+    width: 8px;\r
+    height: 9px;\r
+}\r
+\r
+dialog:-internal-dialog-in-top-layer {\r
+    position: fixed;\r
+    inset-block-start: 0px;\r
+    inset-block-end: 0px;\r
+    max-width: 99.9%;\r
+    max-height: 99.8%;\r
+    user-select: text;\r
+    visibility: visible;\r
+    overflow: auto;\r
+}\r
+\r
+input[type='file']::file-selector-button {\r
+    font-family: "Montserrat", sans-serif;\r
+    position: absolute;\r
+    right: -4px;\r
+    top: 0;\r
+    height: 100%;\r
+    border: none;\r
+    padding: 5px 15px;\r
+    color: #292929cd;\r
+    cursor: pointer;\r
+    font-size: 13px;\r
+    background-color: #dadadaf2;\r
+}\r
+\r
+input[type=file]::file-selector-button:hover {\r
+    background-color: #a9a9a9f2;\r
+}\r
+\r
+/* React-Select Library CSS */\r
+.css-1u9des2-indicatorSeparator {\r
+    -webkit-align-self: stretch;\r
+    -ms-flex-item-align: stretch;\r
+    align-self: stretch;\r
+    width: 1px;\r
+    background-color: hsl(0, 0%, 80%);\r
+    margin-bottom: 0px !important;\r
+    margin-top: 0px !important;\r
+    box-sizing: border-box;\r
+}\r
+\r
+.css-13cymwt-control {\r
+    min-height: max-content !important;\r
+}\r
+\r
+.css-hlgwow {\r
+    padding: 0rem 0.5rem !important;\r
+}\r
+\r
+.css-1u9des2-indicatorSeparator {\r
+    visibility: hidden;\r
+}\r
+\r
+.css-16xfy0z-control,\r
+.css-t3ipsp-control {\r
+    min-height: 10px !important;\r
+}\r
+\r
+.css-1xc3v61-indicatorContainer,\r
+.css-15lsz6c-indicatorContainer,\r
+.css-1xc3v61-indicatorContainer {\r
+    padding: 0px 8px !important;\r
+}\r
+\r
+.css-13cymwt-control {\r
+    border: 1px solid #d4d4d8 !important;\r
+    outline: none !important;\r
+}\r
+\r
+.css-1dyz3mf {\r
+    padding: 1px 1px !important;\r
+}\r
+\r
+/* Skeleton CSS */\r
+.animate {\r
+    animation: shimmer 2s infinite linear;\r
+    background: linear-gradient(to right, #fff 4%, #e2e2e2 25%, #fff 36%);\r
+    background-size: 1000px 100%;\r
+}\r
+\r
+@keyframes shimmer {\r
+    0% {\r
+        background-position: -1000px 0;\r
+    }\r
+\r
+    100% {\r
+        background-position: 1000px 0;\r
+    }\r
+}\r
+\r
+/* Range Slider CSS */\r
+input[type='range']::-webkit-slider-runnable-track {\r
+    width: 100%;\r
+    height: 6px;\r
+    background: linear-gradient(to right, #132438 var(--value), #e2e8f0 var(--value));\r
+    border-radius: 5px;\r
+    cursor: pointer;\r
+}\r
+\r
+input[type='range']::-moz-range-track {\r
+    width: 100%;\r
+    height: 6px;\r
+    background: linear-gradient(to right, #132438 var(--value), #e2e8f0 var(--value));\r
+    border-radius: 5px;\r
+    cursor: pointer;\r
+}\r
+\r
+input[type='range']::-webkit-slider-thumb {\r
+    -webkit-appearance: none;\r
+    z-index: 999;\r
+    appearance: none;\r
+    width: 24px;\r
+    height: 24px;\r
+    background: url('./assets/slider.svg') no-repeat center;\r
+    background-size: contain;\r
+    cursor: pointer;\r
+    border: none;\r
+    background-position: center;\r
+\r
+    margin-top: -11px;\r
+}\r
+\r
+input[type='range']::-moz-range-thumb {\r
+    width: 24px;\r
+    height: 24px;\r
+    background: url('./assets/slider.svg') no-repeat center;\r
+    background-size: contain;\r
+    cursor: pointer;\r
+    border: none;\r
+    background-position: center;\r
+\r
+    margin-top: -11px;\r
 }`,IA=`import React from 'react'\r
 \r
 class ErrorBoundary extends React.Component {\r
@@ -766,13 +766,38 @@ const Table = (props) => {\r
                                     page?.map((row, index) => {\r
                                         return (\r
                                             <div key={index} className="border-2 rounded-xl p-3 shadow-[0px_0px_10px_rgba(0,0,0,0.1)] bg-white flex flex-col gap-2 text-sm">\r
-                                                {props?.columns?.map((column, index) => <div key={index} className="flex gap-2">\r
-                                                    {!column?.screen && <span className="font-semibold">{column?.Header}: </span>}\r
-                                                    <div className="font-normal">\r
-                                                        {row?.cells[index].render('Cell')}\r
+                                                {props?.columns?.map((column, index) => {\r
+                                                    if (!column.more) {\r
+                                                        return (\r
+                                                            <div key={index} className="flex gap-2">\r
+                                                                {!column?.screen && <span className="font-semibold">{column?.Header}: </span>}\r
+                                                                <div className="font-normal">\r
+                                                                    {row?.cells[index].render('Cell')}\r
+                                                                </div>\r
+                                                            </div>\r
+                                                        )\r
+                                                    }\r
+                                                })}\r
+                                                {props?.columns.some(item => item.more == true) &&\r
+                                                    <div onClick={() => toggleData(row?.id)} className="flex gap-2 w-max items-center rounded-md border-zinc-600 text-zinc-800 cursor-pointer">\r
+                                                        <span className='text-xs'>More Details</span>\r
+                                                        <span className={\`select-none pr-1 transition-all duration-300 text-lg \${toggle == row?.id && " -scale-y-100"}\`}><IoIosArrowDropdown /></span>\r
                                                     </div>\r
-                                                </div>\r
-                                                )}\r
+                                                }\r
+                                                {toggle == row?.id && props?.columns?.map((column, index) => {\r
+                                                    if (column.more) {\r
+                                                        return (\r
+                                                            <>\r
+                                                                <div key={index} className="flex gap-2">\r
+                                                                    {!column?.screen && <span className="font-semibold">{column?.Header}: </span>}\r
+                                                                    <div className="font-normal">\r
+                                                                        {row?.cells[index].render('Cell')}\r
+                                                                    </div>\r
+                                                                </div>\r
+                                                            </>\r
+                                                        )\r
+                                                    }\r
+                                                })}\r
                                             </div>\r
                                         )\r
                                     }\r
@@ -1480,13 +1505,38 @@ const TableBp = (props) => {\r
                                     page?.map((row, index) => {\r
                                         return (\r
                                             <div key={index} className="border-2 rounded-xl p-3 shadow-[0px_0px_10px_rgba(0,0,0,0.1)] bg-white flex flex-col gap-2 text-sm">\r
-                                                {props?.columns?.map((column, index) => <div key={index} className="flex gap-2">\r
-                                                    {!column?.screen && <span className="font-semibold">{column?.Header}: </span>}\r
-                                                    <div className="font-normal">\r
-                                                        {row?.cells[index].render('Cell')}\r
+                                                {props?.columns?.map((column, index) => {\r
+                                                    if (!column.more) {\r
+                                                        return (\r
+                                                            <div key={index} className="flex gap-2">\r
+                                                                {!column?.screen && <span className="font-semibold">{column?.Header}: </span>}\r
+                                                                <div className="font-normal">\r
+                                                                    {row?.cells[index].render('Cell')}\r
+                                                                </div>\r
+                                                            </div>\r
+                                                        )\r
+                                                    }\r
+                                                })}\r
+                                                {props?.columns.some(item => item.more == true) &&\r
+                                                    <div onClick={() => toggleData(row?.id)} className="flex gap-2 w-max items-center rounded-md border-zinc-600 text-zinc-800 cursor-pointer">\r
+                                                        <span className='text-xs'>More Details</span>\r
+                                                        <span className={\`select-none pr-1 transition-all duration-300 text-lg \${toggle == row?.id && " -scale-y-100"}\`}><IoIosArrowDropdown /></span>\r
                                                     </div>\r
-                                                </div>\r
-                                                )}\r
+                                                }\r
+                                                {toggle == row?.id && props?.columns?.map((column, index) => {\r
+                                                    if (column.more) {\r
+                                                        return (\r
+                                                            <>\r
+                                                                <div key={index} className="flex gap-2">\r
+                                                                    {!column?.screen && <span className="font-semibold">{column?.Header}: </span>}\r
+                                                                    <div className="font-normal">\r
+                                                                        {row?.cells[index].render('Cell')}\r
+                                                                    </div>\r
+                                                                </div>\r
+                                                            </>\r
+                                                        )\r
+                                                    }\r
+                                                })}\r
                                             </div>\r
                                         )\r
                                     }\r
@@ -3458,4 +3508,4 @@ export const { changeTheme } = dark.actions;`,i_=()=>{let e=[{id:1,topic:"Import
 \r
 }\r
 \r
-export default Curried;`,P_=()=>{let e=[{id:1,topic:"Curried Problems",fname:"Curried.js",file:[M_]}];const[t,r]=oe.useState(""),[a,n]=oe.useState(""),[i,u]=oe.useState(!1),o=oe.useRef([]),d=()=>{window.scrollTo({top:0,behavior:"smooth"})},s=f=>{o.current[f]&&o.current[f].scrollIntoView({behavior:"smooth",block:"start"})},l=f=>{s(f),a==f?n(""):n(f)},b=(f,h)=>{navigator.clipboard.writeText(f).then(()=>{r(h),setTimeout(()=>r(""),2e3)}).catch(E=>{})},g=()=>{window.scrollY>152?u(!0):u(!1)};return oe.useEffect(()=>(window.addEventListener("scroll",g),()=>{window.removeEventListener("scroll",g)}),[]),G.jsxs(G.Fragment,{children:[G.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:G.jsxs("div",{className:"w-full px-2",children:[G.jsx("div",{className:"w-full flex justify-center",children:G.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"JS Problems"})}),G.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:e.map(f=>G.jsx(G.Fragment,{children:G.jsxs("div",{ref:h=>o.current[f==null?void 0:f.id]=h,className:`w-full transition-all duration-200 ${a==f.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[G.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${a==f.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>l(f.id),children:[f.topic," - ",G.jsxs("span",{className:"font-semibold italic",children:["(",f.fname,")"]})]}),a==f.id&&f.file.map((h,E)=>G.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[G.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>b(h,String(h)),children:[t==String(h)?"Copied":"Copy"," Code"]}),G.jsx(xs,{className:"text-xs",language:"javascript",style:Af,children:h},E)]}))]},f.id)}))})]})}),i&&G.jsx("div",{onClick:d,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:G.jsx("a",{className:"transform text-white ",children:G.jsx(Cf,{})})})]})},U_=oe.lazy(()=>$g(()=>import("./ExperimentalProject-C36nUlAt.js"),__vite__mapDeps([0,1,2]))),$_=oe.lazy(()=>$g(()=>import("./Home-BbnqlbLO.js"),__vite__mapDeps([3,1,2]))),G_=()=>{const{stateRoute:e,route:t}=oe.useContext(Hf),r=[{path:"/projectBase",element:G.jsx(i_,{})},{path:"/experiment",element:G.jsx(U_,{})},{path:"/problems",element:G.jsx(P_,{})}],a=n=>{let i=sessionStorage.getItem("pwd")??"";if(B_(i)==="8709488621")return n;t("/")};return G.jsxs(G.Fragment,{children:[e!=="/"&&G.jsx("button",{className:"animate__animated animate__fadeIn absolute md:top-4 top-2 md:left-6 left-2 border px-3 rounded text-sm hover:bg-slate-800 hover:text-white py-1",onClick:()=>t("/"),children:"Back"}),e==="/"&&G.jsx($_,{}),r.map(n=>G.jsx(G.Fragment,{children:n.path===e&&a(n.element)})),G.jsx("div",{className:"h-[10vh]"})]})},H_=Object.freeze(Object.defineProperty({__proto__:null,default:G_},Symbol.toStringTag,{value:"Module"}));export{Cf as B,TA as G,H_ as S,B_ as d,z_ as e,xs as h,Af as t};
+export default Curried;`,P_=()=>{let e=[{id:1,topic:"Curried Problems",fname:"Curried.js",file:[M_]}];const[t,r]=oe.useState(""),[a,n]=oe.useState(""),[i,u]=oe.useState(!1),o=oe.useRef([]),d=()=>{window.scrollTo({top:0,behavior:"smooth"})},s=f=>{o.current[f]&&o.current[f].scrollIntoView({behavior:"smooth",block:"start"})},l=f=>{s(f),a==f?n(""):n(f)},b=(f,h)=>{navigator.clipboard.writeText(f).then(()=>{r(h),setTimeout(()=>r(""),2e3)}).catch(E=>{})},g=()=>{window.scrollY>152?u(!0):u(!1)};return oe.useEffect(()=>(window.addEventListener("scroll",g),()=>{window.removeEventListener("scroll",g)}),[]),G.jsxs(G.Fragment,{children:[G.jsx("div",{className:"flex justify-center *:text-zinc-50 overflow-x-clip",children:G.jsxs("div",{className:"w-full px-2",children:[G.jsx("div",{className:"w-full flex justify-center",children:G.jsx("h1",{className:"text-2xl font-medium text-center py-2 mt-2 mb-4 border-b border-gray-400 w-max px-10",children:"JS Problems"})}),G.jsx("div",{className:"flex flex-wrap gap-2 gap-y-4 w-full p-2 md:p-4",children:e.map(f=>G.jsx(G.Fragment,{children:G.jsxs("div",{ref:h=>o.current[f==null?void 0:f.id]=h,className:`w-full transition-all duration-200 ${a==f.id?"md:w-full":"md:w-[49%]"}`,resizable:!0,children:[G.jsxs("h2",{className:`border cursor-pointer animate__animated animate__flipInX px-4 py-2 ${a==f.id?"border-green-700 bg-green-500/20 hover:shadow-[0px_0px_20px_rgba(0,255,0,0.5)]":"border-indigo-700 bg-indigo-500/20 hover:shadow-[0px_0px_20px_rgba(0,0,255,0.5)]"}`,onClick:()=>l(f.id),children:[f.topic," - ",G.jsxs("span",{className:"font-semibold italic",children:["(",f.fname,")"]})]}),a==f.id&&f.file.map((h,E)=>G.jsxs("div",{className:"animate__animated animate__fadeIn w-full bg-[#2b2b2b] border border-green-700 relative",children:[G.jsxs("button",{className:"absolute z-10 right-1 top-1 border border-amber-600 text-amber-50 text-xs font-medium hover:text-white px-3 py-1 hover:bg-amber-500",onClick:()=>b(h,String(h)),children:[t==String(h)?"Copied":"Copy"," Code"]}),G.jsx(xs,{className:"text-xs",language:"javascript",style:Af,children:h},E)]}))]},f.id)}))})]})}),i&&G.jsx("div",{onClick:d,className:"animate__animated animate__fadeIn cursor-pointer text-sm border rounded-full w-max fixed bottom-2 right-2 hover:scale-105 transition-all duration-300 p-2 hover:bg-blue-500/50",children:G.jsx("a",{className:"transform text-white ",children:G.jsx(Cf,{})})})]})},U_=oe.lazy(()=>$g(()=>import("./ExperimentalProject-_7y7IFlm.js"),__vite__mapDeps([0,1,2]))),$_=oe.lazy(()=>$g(()=>import("./Home-FQY03s3R.js"),__vite__mapDeps([3,1,2]))),G_=()=>{const{stateRoute:e,route:t}=oe.useContext(Hf),r=[{path:"/projectBase",element:G.jsx(i_,{})},{path:"/experiment",element:G.jsx(U_,{})},{path:"/problems",element:G.jsx(P_,{})}],a=n=>{let i=sessionStorage.getItem("pwd")??"";if(B_(i)===void 0)return n;t("/")};return G.jsxs(G.Fragment,{children:[e!=="/"&&G.jsx("button",{className:"animate__animated animate__fadeIn absolute md:top-4 top-2 md:left-6 left-2 border px-3 rounded text-sm hover:bg-slate-800 hover:text-white py-1",onClick:()=>t("/"),children:"Back"}),e==="/"&&G.jsx($_,{}),r.map(n=>G.jsx(G.Fragment,{children:n.path===e&&a(n.element)})),G.jsx("div",{className:"h-[10vh]"})]})},H_=Object.freeze(Object.defineProperty({__proto__:null,default:G_},Symbol.toStringTag,{value:"Module"}));export{Cf as B,TA as G,H_ as S,B_ as d,z_ as e,xs as h,Af as t};
